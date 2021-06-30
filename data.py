@@ -15,5 +15,11 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["quels sont les moyens de prevention pour l'évacuation des déchets",13],["quelles sont les mesures preventives pour l'évacuation des déchets",13],
 ["quels sont les moyens de prevention pour la manutentions des objets",14],["quelles sont les mesures preventives pour la manutentions des objets",14],
 ["comment prévenir l'intoxication par les produits chimiques?",15],["que faire en cas de présence de produits chimiques?",15],["quels sont les moyens de prevention contre l'intoxication par les produits chimiques?",15],["quelles sont les mesures preventives contre l'intoxication par les produits chimiques?",15],
-["quel sont les dangers et risques pendant la phase de terrassement",16],["comment prévenir les dangers et risques pendant la phase de terrassement",16],
-["oui",17],["d'accord",17],["yes",17]]
+["Quels sont les risques liés au travail sur l'écran",16],
+["Comment prévenir?",17],["Comment les prévenirs?",17],["quels sont les moyens de prévention?",17],["quels sont les mesures préventives?",17],
+["Quels sont les dangers liés au travail sur l'écran",18],
+["Comment prévenir?",19],["Comment les prévenirs?",19],["quels sont les moyens de prévention?",19],["quels sont les mesures préventives?",19],
+["Comment prévenir les risques liés au travail sur l'écran",20],["Comment prévenir les dangers liés au travail sur l'écran",20],
+["quel sont les dangers et risques pendant la phase de terrassement",21],["comment prévenir les dangers et risques pendant la phase de terrassement",21],
+["oui",22],["d'accord",22],["yes",22],
+["Décapage de la terre végétale",23],["Déblaiement, Nivellement du sol ",23],["Remblai et compactage",23]]
