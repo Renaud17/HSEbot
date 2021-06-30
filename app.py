@@ -147,12 +147,12 @@ def bot_initialize(user_msg):
             elif (user_intent == "question"):
                 user_response=user_response.lower()
                 resp =  response(user_response)
-                return resp + "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
+                return resp #+ "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
 
             elif (user_intent == "Act"):
                 user_response=user_response.lower()
                 resp =  response(user_response)
-                return resp + "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
+                return resp #+ "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
             
             else:
                 resp = random.choice(responses[4]['response'])
