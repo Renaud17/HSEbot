@@ -7,6 +7,13 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["quel sont les dangers et risques dans l'entreprise ou la direction",5],["comment prévenir les dangers et risques dans l'entreprise ou la direction",5],
 ["oui",6],["d'accord",6],["yes",6],
 ["Travail  sur écran ",7],["travail  sur écran ",7],
-["Service de gardienage ",8],["service de gardienage ",8],
+["Service de gardiennage ",8],["service de gardiennage ",8],
 ["Magasin ",9],["magasin ",9],
-["Entretien des locaux ",10],["entretien des locaux ",10]]
+["Entretien des locaux ",10],["entretien des locaux ",10],
+["quels sont les moyens de prevention pour la désinsectisation ou la dératisation?",11],["quelles sont les mesures preventives pour la désinsectisation ou la dératisation?",11],
+["quels sont les moyens de prevention pour le vidanges des fosses",12],["quelles sont les mesures preventives pour le vidanges des fosses?",12],
+["quels sont les moyens de prevention pour l'évacuation des déchets",13],["quelles sont les mesures preventives pour l'évacuation des déchets",13],
+["quels sont les moyens de prevention pour la manutentions des objets",14],["quelles sont les mesures preventives pour la manutentions des objets",14],
+["comment prévenir l'intoxication par les produits chimiques?",15],["que faire en cas de présence de produits chimiques?",15],["quels sont les moyens de prevention contre l'intoxication par les produits chimiques?",15],["quelles sont les mesures preventives contre l'intoxication par les produits chimiques?",15],
+["quel sont les dangers et risques pendant la phase de terrassement",16],["comment prévenir les dangers et risques pendant la phase de terrassement",16],
+["oui",17],["d'accord",17],["yes",17]]
