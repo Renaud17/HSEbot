@@ -24,6 +24,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.ensemble import VotingClassifier
 from sklearn.model_selection import GridSearchCV
 from responses import *
+from data import *
 
 # Lemmitization
 
@@ -47,7 +48,7 @@ def load_doc(jsonFile):
     return Json_data
 
 
-data = load_doc('data.json')
+#data = load_doc('data.json')
 book = load_doc('book.json')
 eclf= joblib.load('eclf.pkl')
 df = pd.DataFrame(data, columns = ["Text","Intent"])
