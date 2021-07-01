@@ -155,14 +155,14 @@ def bot_initialize(user_msg):
                 return resp #+ "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
             
             else:
-                #resp = random.choice(responses[4]['response'])
-                return "Désolé je ne comprent pas ce groupe de mot mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #resp
+                resp = "Désolé je ne comprend pas ce groupe de mot mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
+                return resp
                 
             
         else:
             flag = False
-            #resp = random.choice(responses[2]['response'])
-            return "Désolé je ne comprent pas ce groupe de mot mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #resp
+            resp = "Désolé je ne comprend pas ce groupe de mot mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[2]['response'])
+            return resp
 
 
 tbot = telegram_bot()
