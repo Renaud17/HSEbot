@@ -149,9 +149,6 @@ def bot_initialize(user_msg):
                 resp =  response(user_response)
                 return resp #+ "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
 
-            elif (user_intent == ""):
-                resp = "Désolé je ne comprend pas  mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
-                return resp
             
             else:
                 resp = "Désolé je ne comprend pas  mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
