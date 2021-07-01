@@ -58,8 +58,8 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Comment se protéger contres les projection du béton ?",57],["quel moyen de prévention contre  les projection du béton ?",57], ["Les mesures préventives contre les projection du béton ?",57],
 ["Comment prévenir les douleurs aux articulations liés à l'utilisation du vibreur ?",58],["quel moyen de prévention contre  les douleurs aux articulations liés à l'utilisation du vibreur ?",58], ["Les mesures préventives contre les douleurs aux articulations liés à l'utilisation du vibreur ?",58],
 ["Comment prévenir les troubles auditives ?",59],["quel moyen de prévention contre les troubles auditives ?",59], ["Les mesures préventives contre les troubles auditives ?",59],
-["quel sont les dangers et risques pendant le feraillage",60],["comment prévenir les dangers et risques pendant le feraillage",60],["quelles mesures préventives pendant le feraillage ?",60]
+["quel sont les dangers et risques pendant le feraillage",60],["comment prévenir les dangers et risques pendant le feraillage",60],["quelles mesures préventives pendant le feraillage ?",60],
 ["Cisailler les barres et Plier les barres.",61],
-["Assembler des barres",62]
+["Assembler des barres",62],
 ["Comment prévenir les risques liés a un espace de travail encombré ?",63],["quel moyen de prévention contre  les risques liés a un espace de travail encombré ?",63], ["Les mesures préventives contre les risques liés a un espace de travail encombré ?",63],
 ["Comment prévenir les risques liés à la chute des particules de métal et du matériel ?",64],["quel moyen de prévention contre  les risques liés à la chute des particules de métal et du matériel ?",64], ["Les mesures préventives contre les risques liés à la chute des particules de métal et du matériel ?",64]]
