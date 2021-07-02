@@ -185,7 +185,7 @@ while True:
                 #print(message)
             except:
                 message = None
-from_ = item["message"]["from"]["id"]
-#print(from_)
-reply = make_reply(message)
-tbot.send_message(reply,from_)
+            from_ = item["message"]["from"]["id"]
+            #print(from_)
+            reply = make_reply(message)
+            tbot.send_message(reply,from_)
