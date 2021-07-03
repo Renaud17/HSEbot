@@ -71,6 +71,5 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Comment prévenir l'éffondrements ou écroulements des pannaux de coffrage ?",70],
 ["Mesure préventive pour l'utilisation du matériel ou outils ?",71],
 ["Mesure préventive avant le contacts électriques?",72],
-["Mesure préventive avant le contacts avec substances chimiques?",73],
-["Comment prévenir les risques liés au dallage?",74],["quels sont les moyens de prévention des risques liés au dallage?",74],["quels sont les mesures préventives contre les risques liés au dallage?",74],
-["Comment prévenir les risques liés aux travaux d'élevation?",75],["quels sont les moyens de prévention des risques liés aux travaux d'élevation?",75],["quels sont les mesures préventives contre les risques liés aux travaux d'élevation?",75]]
+["Comment prévenir les risques liés au dallage?",73],["quels sont les moyens de prévention des risques liés au dallage?",73],["quels sont les mesures préventives contre les risques liés au dallage?",73],
+["Comment prévenir les risques liés aux travaux d'élevation?",74],["quels sont les moyens de prévention des risques liés aux travaux d'élevation?",74],["quels sont les mesures préventives contre les risques liés aux travaux d'élevation?",74]]
