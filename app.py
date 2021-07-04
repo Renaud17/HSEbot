@@ -127,21 +127,12 @@ def bot_initialize(user_msg):
                 resp = random.choice(responses[3]['response'])
                 return resp
 
-            elif (user_intent == 'confus'):
-                resp = random.choice(responses[4]['response'])
-                return resp
-
             elif (user_intent == 'but'):
                 resp = random.choice(responses[5]['response'])
                 return resp
 
-            elif (user_intent == 'début'):
-                resp = random.choice(responses[6]['response'])
-                return resp
-
-            elif (user_intent == 'ques'):
-                user_response=user_response.lower()
-                resp =  response(user_response)
+            elif (user_intent == 'conaissance'):
+                resp = random.choice(responses[1]['response'])
                 return resp
             
             elif (user_intent == "question"):
