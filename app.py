@@ -85,7 +85,7 @@ class telegram_bot():
         self.url = f"https://api.telegram.org/bot{self.token}"
 
     def get_updates(self,offset=None):
-        url = self.url+"/getUpdates?timeout=1"
+        url = self.url+"/getUpdates?timeout=100"
         if offset:
             url = url+f"&offset={offset+1}"
         url_info = requests.get(url)
@@ -162,30 +162,28 @@ def bot_initialize(user_msg):
 
 
 tbot = telegram_bot()
-
 update_id = None
-
-def make_reply(msg):
+def make_reply(msg):     # user input will go here
+  
     if msg is not None:
-        reply = bot_initialize(msg)
+        reply = bot_initialize(msg)     # user input will start processing to bot_initialize function
     return reply
-
-
+       
 while True:
-    #print("...")
+    print("...")
     updates = tbot.get_updates(offset=update_id)
     updates = updates['result']
-    #print(updates)
+    print(updates)
     if updates:
         for item in updates:
             update_id = item["update_id"]
-            #print(update_id)
+            print(update_id)
             try:
                 message = item["message"]["text"]
-                #print(message)
+                print(message)
             except:
                 message = None
             from_ = item["message"]["from"]["id"]
-            #print(from_)
+            print(from_)
             reply = make_reply(message)
             tbot.send_message(reply,from_)
