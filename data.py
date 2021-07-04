@@ -27,7 +27,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["EPI pour la circulation sur chantier",26],
 ["circulation sur chantier",27],["circulations chantiers",27],
 ["circulation engins",28],
-["éboulement, collision engin-engin, engin-personne",29],["engin-personne",29],["éboulement",29],["collision",29],["d'éboulement",29],["d'éboulements",29],["éboulements",29]
+["éboulement, collision engin-engin, engin-personne",29],["engin-personne",29],["éboulement",29],["collision",29],["d'éboulement",29],["d'éboulements",29],["éboulements",29],
 ["chutes de déblais",30],["chutes de Gravats",30],["chutes de  déblais/Gravats",30],
 ["le dégagement des gaz nocifs ou toxiques, poussières",31],["gaz nocifs ou toxiques, poussières",31],["gaz nocifs",31],["gaz toxiques",31],["poussières",31],
 ["vibrations et nuisances sonnores",32],["nuisances sonnores",32],["troubles auditives",32],["bruit",32],
@@ -35,7 +35,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["EPI pour le travail en milieu chaud",34],["EPI en milieu chaud",34],["EPI milieu chaud",34],
 ["Quel EPI pour le travail en milieu froid",35],["Quel EPI pour les travaux en milieu froid",35],["EPI milieu froid",35],
 ["thermique",36],["thermiques",36],
-[" fouille",37],["fouilles",37]
+[" fouille",37],["fouilles",37],
 ["Excavation",38],["d'excavation",38],["excavations",38],
 ["Evacuation de la terre",39],["d'évacuation de la terre",39],["évacuations terre",39],
 ["éboulement fouille",40],
