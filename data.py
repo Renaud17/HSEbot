@@ -76,8 +76,8 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["couverture",75],["couvertures",75],
 ["Atteinte occulaires",76],["Atteinte occulaire",76],["atteinte occulaire",76],["Refraction de la lumière par les tolles",76],
 ["Travail avec du courant électrique",77],
-["Plomberie",78],["plomberie",78],["plomberie,Plomberie",78],
-["Flamme de chalumeau, soudage à l'arc",79],["Brûlure, incendie, explosion",79],["incendie",79],["d'incendie",79],
+["Plomberie",78],["plomberie",78],
+["Flamme de chalumeau, soudage à l'arc",79],["Brûlure, incendie, explosion",79],["incendie",79],["d'incendie",79],["l'incendie"]
 ["Travail avec l'électricité",80],["Electrocution, Electricité",80],["électrocution, électricité",80],["électrocutions, électricités",80],["électrocution, électricité",80],["Electrocutions, Electricités",80],
 ["Espace encombré",81],["Chute de plain-pied",81],["espace encombré",81],["chute de plain-pied",81],["espaces encombrés",81],
 ["Dégagement des poussières",82],["Inhalation des poussières",82],["dégagement de poussière",82],["inhalation de poussière",82],
@@ -99,4 +99,5 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Sol glissant",98],["sol glissant",98],["sol glisse",98],
 ["produits d'entretien( détergent, décapant, dégraissants)",99],["produits d'entretien",99],
 ["Des cables qui trainent au sol",100],["cables qui trainent au sol",100],["cable  traine  sol",100],["cable nu",100],["cable exposé",100],["cable,câble",100],["cables,câbles",100],["exposition de cable",100],
-["Déplacement sur des escaliers",101],["déplacement escalier",101],["déplacements escaliers",101]]
+["Déplacement sur des escaliers",101],["déplacement escalier",101],["déplacements escaliers",101],
+["Plomberie",102],["plomberie",102]]
