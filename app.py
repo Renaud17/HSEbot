@@ -165,7 +165,7 @@ tbot = telegram_bot()
 update_id = None
 def make_reply(msg):
     if msg is not None:
-    reply = bot_initialize(msg)     # user input will start processing to bot_initialize function
+        reply = bot_initialize(msg)     # user input will start processing to bot_initialize function
     return reply
        
 while True:
