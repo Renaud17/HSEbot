@@ -49,7 +49,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["fondation",48],
 ["feraillage ",49],
 ["Coffrage",50],
-["Betonnage",51],["betonnage",51],
+["Bétonnage",51],["bétonnage",51],
 ["projection des particules dans les yeux ",52],["particules dans les yeux ",52],
 ["travail dans la fosse",53],
 ["inhalation des débrits de fer",54],["débrits de fer",54],
