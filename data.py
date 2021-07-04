@@ -36,7 +36,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Quel EPI pour le travail en milieu froid",35],
 [" thermique",36],
 [" fouille",37],
-["Excavation",38],["d'excavation",38]
+["Excavation",38],["d'excavation",38],
 ["Evacuation de la terre",39],["d'évacuation de la terre",39],
 ["éboulement fouille",40],
 ["collision Engin-personnes, Engin-Engin",41],["collision Engin-personnes",41], ["collision  Engin-Engin",41], ["collision  d'engin",41], ["collision engin",41],
@@ -72,4 +72,4 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["utilisation du matériel ou outils ",71],
 ["contacts électriques",72],
 ["dallage",73],
-["travaux d'élevation",74],["élevation",74]]
+["travaux d'élevation",74],["élevation",74],["d'élevation",74]]
