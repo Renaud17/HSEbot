@@ -98,5 +98,5 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Carrelage",97],["carellage, carellages",97],
 ["Sol glissant",98],["sol glissant",98],["sol glisse",98],
 ["produits d'entretien( détergent, décapant, dégraissants)",99],["produits d'entretien",99],
-["Des cables qui trainent au sol",100],["cables qui trainent au sol",100],["cable  traine  sol",100],["Trébuchement",100],["trébuchement,trébuchements",100],
+["Des cables qui trainent au sol",100],["cables qui trainent au sol",100],["cable  traine  sol",100],["cable nu",100],["cable exposé",100],["cable,câble",100],["cables,câbles",100],["exposition de cable",100],
 ["Déplacement sur des escaliers",101],["déplacement escalier",101],["déplacements escaliers",101]]
