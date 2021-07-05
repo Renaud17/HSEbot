@@ -126,5 +126,3 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["règle travaux hauteur",123],["règle travail hauteur",123],["règles travaux hauteur",123],["règles travail hauteur",123],["règles de sécurité travail hauteur",123],
 ["travail avec des engins et des véhicules au chantier",124], ["travail engins  véhicules  chantier",124],["Travail engin  véhicule  chantier",124],
 ["Grue à tour",125],["grue à tour",125],["utilisation grue à tour",125],["Utilisation grue à tour",125],["règle sécurité grue à tour",125]]
-
-]
