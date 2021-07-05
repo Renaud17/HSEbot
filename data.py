@@ -44,7 +44,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["ensevelissements",43],["d'ensevelissements",43],["ensevelissement",43],
 ["intoxications gaz nocifs, explosifs, toxiques ",44],["d'intoxications de gaz nocifs, explosifs, toxiques ",44],
 ["chutes de déblais",45],[" chutes d'objets sur les travailleurs ",45],
-["troubles musculosquelettiques",46],["trouble musculosquelettique",46],["Troubles musculosquelettiques",46],["Trouble musculosquelettique",46],
+["troubles musculosquelettiques",46],["trouble musculosquelettique",46],["Troubles musculosquelettiques",46],["Trouble musculosquelettique",46],["Trouble musculosqueletique",46],
 ["écrasement, coincement sous l'engin ",47],["coincement sous l'engin ",47], ["écrasement",47],["d'écrasement",47],
 ["fondation",48],
 ["feraillage ",49],
