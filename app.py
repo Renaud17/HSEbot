@@ -157,8 +157,8 @@ def make_reply(msg):
        
 while True:
     #print("...")
-    updates = tbot.get_updates(offset=update_id)
-    updates = updates['result']
+    updatesx = tbot.get_updates(offset=update_id)
+    updates = updatesx['result']
     #print(updates)
     if updates:
         for item in updates:
