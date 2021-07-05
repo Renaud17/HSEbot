@@ -159,7 +159,7 @@ def make_reply(msg):
 
 update_id=None
 while True:
-    updates = get_updates(update_id)
+    updates = tbot.get_updates(update_id)
     if updates:
         for item in updates:
             update_id = item["update_id"]
@@ -168,8 +168,8 @@ while True:
             except:
                 message = None
             from_ = item["message"]["from"]["id"]
-            reply = find_ans(message)
-            send_message(from_,reply)
+            reply = make_reply(message)
+            tbot.send_message(from_,reply)
 
 """
 while True:
