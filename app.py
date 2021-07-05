@@ -104,7 +104,7 @@ def bot_initialize(user_msg):
         user_response = user_msg
         user_intent = intent(user_response)
         
-        if (user_intent != 'Bye'):
+        if (user_intent !='fin_conversation'):
             if (user_response == '/start'):
                 resp = """Salut je  suis HSEbot une intelligence artificielle qui t'aide à identifier les dangers et les risques ainsi qu'à les prévenirs.Mon créateur est Dahou Renaud L:https://www.linkedin.com/in/dahou-renaud-louis-8958599a/\n\nComment puis-je t'aider ?\n\nTapez Bye pour quitter."""
                 return resp
@@ -139,12 +139,12 @@ def bot_initialize(user_msg):
                 return resp #+ "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
 
             else:
-                resp = "Désolé je ne comprend pas  mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
+                resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
                 return resp
                    
         else:
             flag = False
-            resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[2]['response'])
+            resp = "Mais vous ne m'avez posé aucune question"+ ", comment puis-je vous aider?" #random.choice(responses[2]['response'])
             return resp
 
 
