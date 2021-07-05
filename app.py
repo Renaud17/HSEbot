@@ -102,7 +102,6 @@ def bot_initialize(user_msg):
     flag=True
     while(flag==True):
         user_response = user_msg
-        
         user_intent = intent(user_response)
         
         if (user_intent != 'Bye'):
@@ -139,12 +138,10 @@ def bot_initialize(user_msg):
                 resp =  response(user_response)
                 return resp #+ "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
 
-            
             else:
                 resp = "Désolé je ne comprend pas  mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
                 return resp
-                
-            
+                   
         else:
             flag = False
             resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[2]['response'])
@@ -159,20 +156,20 @@ def make_reply(msg):
     return reply
        
 while True:
-    print("...")
+    #print("...")
     updates = tbot.get_updates(offset=update_id)
     updates = updates['result']
-    print(updates)
+    #print(updates)
     if updates:
         for item in updates:
             update_id = item["update_id"]
-            print(update_id)
+            #print(update_id)
             try:
                 message = item["message"]["text"]
-                print(message)
+                #print(message)
             except:
                 message = None
             from_ = item["message"]["from"]["id"]
-            print(from_)
+            #print(from_)
             reply = make_reply(message)
             tbot.send_message(reply,from_)
