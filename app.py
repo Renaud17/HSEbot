@@ -170,6 +170,6 @@ while True:
             except:
                 message = None
             from_ = item["message"]["from"]["id"]
-            #print(from_)
+            print(from_)
             reply = make_reply(message)
             tbot.send_message(reply,from_)
