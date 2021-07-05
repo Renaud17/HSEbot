@@ -157,25 +157,10 @@ def make_reply(msg):
  
 
 
-update_id=None
-while True:
-    updates = tbot.get_updates(update_id)
-    if updates:
-        for item in updates:
-            update_id = item["update_id"]
-            try:
-                message = item["message"]["text"]
-            except:
-                message = None
-            from_ = item["message"]["from"]["id"]
-            reply = make_reply(message)
-            tbot.send_message(from_,reply)
-
-"""
 while True:
     #print("...")
-    updatesx = tbot.get_updates(offset=update_id)
-    updates = updatesx['result']
+    updates = tbot.get_updates(offset=update_id)
+    updates = updates['result']
     #print(updates)
     if updates:
         for item in updates:
@@ -190,4 +175,4 @@ while True:
             #print(from_)
             reply = make_reply(message)
             tbot.send_message(reply,from_)
-"""
+
