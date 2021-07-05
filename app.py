@@ -156,7 +156,7 @@ update_id = None
 def make_reply(msg):
     if msg is not None:
         reply = bot_initialize(msg)     # user input will start processing to bot_initialize function
-        return reply
+    return reply
        
 while True:
     print("...")
