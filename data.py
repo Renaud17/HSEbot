@@ -129,4 +129,6 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Grue mobile",126],["grue mobile",126],["utilisation grue mobile",126],["Utilisation grue mobile",126],["règle sécurité grue mobile",126],
 ["Travail électricité",127],["Travaux électricité",127],["travail électricité",127],["travaux électricité",127],["Travail électrique",127],["Travaux électrique",127],["travail électrique",127],["travaux électrique",127],
 ["EPI soudure",128],["EPI soudage",128],
-["Construction métallique",129],["Constructions métalliques",129],["construction métallique",129],["constructions métalliques",129]]
+["Construction métallique",129],["Constructions métalliques",129],["construction métallique",129],["constructions métalliques",129],
+["Eblouissement",130],["éblouissement",130],["Eblouissements",130],["éblouissements",130],
+["Fuite de Gaz chalumeau",131],["fuite de Gaz chalumeau",131],["Fuites  Gaz chalumeau",131],["fuites  Gaz chalumeau",131]]
