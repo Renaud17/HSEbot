@@ -159,7 +159,7 @@ def make_reply(msg):
 
 update_id=None
 while True:
-    updates = get_last_update(update_id)
+    updates = get_updates(update_id)
     if updates:
         for item in updates:
             update_id = item["update_id"]
