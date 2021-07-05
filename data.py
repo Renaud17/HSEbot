@@ -125,4 +125,8 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["évaluation travail en hauteur",122],["évaluer travaux en hauteur",122],["planifié travaux en hauteur",122],["planifier travaux en hauteur",122],["organiser travaux en hauteur",122],["organisé travaux en hauteur",122],["planification travaux en hauteur",122],["organisation travaux en hauteur",122],["planification travail en hauteur",122],["organisation travail en hauteur",122],
 ["règle travaux hauteur",123],["règle travail hauteur",123],["règles travaux hauteur",123],["règles travail hauteur",123],["règles de sécurité travail hauteur",123],
 ["travail avec des engins et des véhicules au chantier",124], ["travail engins  véhicules  chantier",124],["Travail engin  véhicule  chantier",124],
-["Grue à tour",125],["grue à tour",125],["utilisation grue à tour",125],["Utilisation grue à tour",125],["règle sécurité grue à tour",125]]
+["Grue à tour",125],["grue à tour",125],["utilisation grue à tour",125],["Utilisation grue à tour",125],["règle sécurité grue à tour",125],
+["Grue mobile",126],["grue mobile",126],["utilisation grue mobile",126],["Utilisation grue mobile",126],["règle sécurité grue mobile",126],
+["Travail électricité",127],["Travaux électricité",127],["travail électricité",127],["travaux électricité",127],["Travail électrique",127],["Travaux électrique",127],["travail électrique",127],["travaux électrique",127],
+["EPI soudure",128],["EPI soudage",128],
+["Construction métallique",129],["Constructions métalliques",129],["construction métallique",129],["constructions métalliques",129]]
