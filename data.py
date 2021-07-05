@@ -134,7 +134,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Fuite de Gaz chalumeau",131],["fuite de Gaz chalumeau",131],["Fuites  Gaz chalumeau",131],["fuites  Gaz chalumeau",131],
 ["Maintenance",132],["maintenance engin véhicule",132],["maintenance engins véhicules",132],
 ["Rayonnement UV",133],["rayonnement UV",133],["Rayonnements UV",133],["rayonnements UV",133],
-["Inhalation des fumées et des gaz nocifs",134],["inhalation fumées  gaz nocifs",134],
+["Inhalation des fumées et des gaz nocifs",134],["inhalation fumées  gaz nocifs",134],["d'inhalation fumées  gaz nocifs",134],["Inhalations des fumées et des gaz nocifs",134],["inhalations fumées  gaz nocifs",134],["d'inhalations fumées  gaz nocifs",134],
 ["Meule en activité",135],["meule activité",135],
 ["Tension électrique",136],["tensions électriques",136],
 ["Brûlure ",137],["brûlure ",137],["Brûlures ",137],["brûlures ",137],["Brulure ",137],["brulure ",137],["Brulures ",137],["brulures ",137]]
