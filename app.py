@@ -104,7 +104,7 @@ def bot_initialize(user_msg):
         user_response = user_msg
         user_intent = intent(user_response)
         
-        if (user_intent !='fin_conversation'):
+        if (user_intent !=''):
             if (user_response == '/start'):
                 resp = """Salut je  suis HSEbot une intelligence artificielle qui t'aide à identifier les dangers et les risques ainsi qu'à les prévenirs.Mon créateur est Dahou Renaud L:https://www.linkedin.com/in/dahou-renaud-louis-8958599a/\n\nComment puis-je t'aider ?\n\nTapez Bye pour quitter."""
                 return resp
