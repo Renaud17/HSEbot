@@ -44,7 +44,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["ensevelissements",43],["d'ensevelissements",43],["ensevelissement",43],
 ["intoxications gaz nocifs, explosifs, toxiques ",44],["d'intoxications de gaz nocifs, explosifs, toxiques ",44],
 ["chutes de déblais",45],[" chutes d'objets sur les travailleurs ",45],
-["troubles musculosquelettiques",46],
+["troubles musculosquelettiques",46],["trouble musculosquelettique",46],
 ["écrasement, coincement sous l'engin ",47],["coincement sous l'engin ",47], ["écrasement",47],["d'écrasement",47],
 ["fondation",48],
 ["feraillage ",49],
@@ -67,7 +67,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["EPI travail électrique",66],
 ["chocs électriques, Electrisation, Electrocution",67],["électriques, Electrisation, Electrocution",67],
 [" EPI coffrage",68],
-["travail en hauteur",69],["chute de personne",69],["chutes de personne",69],
+["travail en hauteur",69],["chute de personne",69],["chutes de personne",69],["Chutes de personne",69],
 ["éffondrements ou écroulements des pannaux de coffrage ",70],["écroulements des pannaux de coffrage ",70],["éffondrements des pannaux de coffrage ",70],["d'éffondrements des pannaux de coffrage ",70],
 ["utilisation du matériel ou outils ",71],["Blessures",71],["blessures",71],["blessure",71],["Blessure",71],
 ["contacts électriques",72],
@@ -117,4 +117,13 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Peinture",114],["peinture",114],["peintures",114],
 ["Produits inflammables peinture",115],["produit inflammable peinture",115],["produit inflammable peinture",115],["incendie, explosion peinture",115],
 ["Utilisation du matériel (cutters, ciseaux, gratoire)",116],["utilisation matériel cutters, ciseaux, gratoire",116],["Blessures, coupure",116],
-["glissade",117],["Glissade",117],["glissades",117],["Glissades",117]]
+["glissade",117],["Glissade",117],["glissades",117],["Glissades",117],
+["Atteinte de la peau (Brûlure)",118],["atteinte  peau",118],["Atteintes  peau",118],
+["chutes hauteurs",119],["chute hauteur",119],["Chutes de hauteur",119],["chute de hauteur",119],["Chute de hauteur",119],["Travaux en hauteur",119],["Travaux  hauteur",119],["travaux en hauteur",119],["travaux  hauteur",119],["Travaux en hauteur",119],["Travail hauteur",119],["travail en hauteur",119],["travail  hauteur",119],
+["EPI de travail en hauteur",120],["EPI de travaux en hauteur",120],["EPI hauteur",120],
+["non habilitation des travaux en hauteur",121],["non habileté travaux e hauteur",121],[" personne non habileté travail hauteur",121],
+["évaluation travail en hauteur",122],["évaluer travaux en hauteur",122],["planifié travaux en hauteur",122],["planifier travaux en hauteur",122],["organiser travaux en hauteur",122],["organisé travaux en hauteur",122],["planification travaux en hauteur",122],["organisation travaux en hauteur",122],["planification travail en hauteur",122],["organisation travail en hauteur",122],
+["règle travaux hauteur",123],["règle travail hauteur",123],["règles travaux hauteur",123],["règles travail hauteur",123],["règles de sécurité travail hauteur",123],
+["travail avec des engins et des véhicules au chantier",124], ["travail engins  véhicules  chantier",124],["Travail engin  véhicule  chantier",124],
+["Grue à tour",125],["grue à tour",125],["utilisation grue à tour",125],["Utilisation grue à tour",125],["règle sécurité grue à tour",125]]
+        
