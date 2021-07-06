@@ -137,4 +137,16 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Inhalation des fumées et des gaz nocifs",134],["inhalation fumées  gaz nocifs",134],["d'inhalation fumées  gaz nocifs",134],["Inhalations des fumées et des gaz nocifs",134],["inhalations fumées  gaz nocifs",134],["d'inhalations fumées  gaz nocifs",134],
 ["Meule en activité",135],["meule activité",135],
 ["Tension électrique",136],["tensions électriques",136],
-["Brûlure ",137],["brûlure ",137],["Brûlures ",137],["brûlures ",137],["Brulure ",137],["brulure ",137],["Brulures ",137],["brulures ",137]]
+["Brûlure ",137],["brûlure ",137],["Brûlures ",137],["brûlures ",137],["Brulure ",137],["brulure ",137],["Brulures ",137],["brulures ",137],
+["Cécité traumatisme oculaires",138],["projection  yeux",138],
+["Travaux en espace confiné",139],["travaux espace confiné",139],
+["Surdité",140],["Bruits",140],["surdité",140],["bruit",140],
+["Descente dans des puits",141],["descente  puits",141],["chute",141],
+["Exposition chaleur froid",142],["exposition chaleur froid",142],
+["contamination cutanéo-muqueuse",143],["Infections parasitaire",143],["contaminations cutanéo-muqueuse",143],["infection parasitaire",143],
+["Incendie/Explosion",144],["incendie explosion",144],["incendies explosions",144],
+["Electrocution/Electrisation",145],["Electrocutions Electrisations",145],["electrocution electrisation",145],["electrocutions electrisations",145],
+["Asphyxie, Intoxication espace confiné",146],["asphyxie, intoxication  espace confiné",146],
+["Etouffement espace confiné",147],["etouffement  espace confiné",147],
+["Engoisse panique espace confiné",148],["engoisses paniques espace confiné",148],
+["Circulation sur chantier",149],["circulation sur chantier",149]]
