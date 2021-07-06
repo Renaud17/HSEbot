@@ -154,7 +154,7 @@ def bot_initialize(user_msg):
 
 #tbot = telegram_bot()
 tbot=telegram.Bot('1836903308:AAHtERNcpC-aJjb6J86k2AUzzUu_rxlT53k')
-update_id = None
+#update_id = None
 def make_reply(msg):     # user input will go here
     if msg is not None:
         reply = bot_initialize(msg)     # user input will start processing to bot_initialize function
