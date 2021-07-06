@@ -177,7 +177,7 @@ def echo(bot: telegram.Bot) -> None:
         # and not all messages contain text
         if update.message and update.message.text:
             # Reply to the message
-            update.message.reply_text(update.message.text)
+            update.message.reply_text(reply)
 
 
 if __name__ == '__main__':
