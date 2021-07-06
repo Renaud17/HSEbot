@@ -149,4 +149,10 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Asphyxie, Intoxication espace confiné",146],["asphyxie, intoxication  espace confiné",146],
 ["Etouffement espace confiné",147],["etouffement  espace confiné",147],
 ["Engoisse panique espace confiné",148],["engoisses paniques espace confiné",148],
-["Circulation sur chantier",149],["circulation sur chantier",149]]
+["Circulation sur chantier",149],["circulation sur chantier",149],
+["Coactivité",150],["coactivité",150],["Coactivités",150],["coactivités",150],["Co-activité",150],["co-activité",150],["Co-activités",150],["co-activités",150],
+["Mission professionnelle sur trajet",151],["mission professionnel trajet",151],
+["Collision véhicules",152],["collision véhicule",152],["Collisions véhicules",152],["collisions véhicule",152],
+["Manutention manuelle",153],["manutentions manuelles",153],["manutention manuelle",153],
+["Risques chimiques",154],["risques chimiques",154],["Risque chimique",154],["risque chimique",154],
+["Néttoyage à pression",155],["néttoyage à pression",155],["Jet très haute pression",155],["jet très haute pression",155]]
