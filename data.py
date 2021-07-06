@@ -156,4 +156,4 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Manutention manuelle",153],["manutentions manuelles",153],["manutention manuelle",153],
 ["Risques chimiques",154],["risques chimiques",154],["Risque chimique",154],["risque chimique",154],
 ["Néttoyage à pression",155],["néttoyage à pression",155],["Jet très haute pression",155],["jet très haute pression",155],
-["HSE hse Hse",156]]
+["HSE hse Hse",156],["HSE",156],["hse",156],["Hse",156]]
