@@ -151,14 +151,10 @@ def bot_initialize(user_msg):
             resp = "Mais vous ne m'avez posé aucune question"+ ", comment puis-je vous aider?" #random.choice(responses[2]['response'])
             return resp
 
-
+        
 tbot = telegram_bot()
 
-try:
-    update_id = tbot.get_updates()[0].update_id
-except IndexError:
-    update_id = None
-
+update_id = None
 
 def make_reply(msg):
     if msg is not None:
