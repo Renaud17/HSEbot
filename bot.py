@@ -174,9 +174,22 @@ def echo(bot: telegram.Bot) -> None:
 
         # your bot can receive updates without messages
         # and not all messages contain text
-        if update.message and update.message.text:
+        #if update.message and update.message.text:
             # Reply to the message
-            update.message.reply_text(update.message.text)
+            #update.message.reply_text(update.message.text)
 
+        if update:
+            for item in update:
+                update_id = item["UPDATE_ID"]
+                print(UPDATE_ID)
+                try:
+                    message = item["message"]["text"]
+                    #print(message)
+                except:
+                    message = None
+                from_ = item["message"]["from"]["id"]
+                #print(from_)
+                reply = make_reply(message)
+                bot.send_message(reply,from_)
 if __name__ == '__main__':
     main()
