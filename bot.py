@@ -74,30 +74,6 @@ def intent(user_response):
     intent_predicted = responses[predicted_intent[0]]['intent']
     return intent_predicted
 
-
-import json
-token = "1836903308:AAHtERNcpC-aJjb6J86k2AUzzUu_rxlT53k"
-
-class telegram_bot():
-    def __init__(self):
-        self.token=token 
-        self.url = f"https://api.telegram.org/bot{self.token}"
-
-    def get_updates(self,offset=None):
-        url = self.url+"/getUpdates?timeout=100"
-        if offset:
-            url = url+f"&offset={offset+1}"
-        url_info = requests.get(url)
-        return json.loads(url_info.content)
-    def send_message(self,msg,chat_id):
-        url = self.url + f"/sendMessage?chat_id={chat_id}&text={msg}"
-        if msg is not None:
-            requests.get(url)
-
-    def grab_token(self):
-        return tokens
-
-
 def bot_initialize(user_msg):
     flag=True
     while(flag==True):
@@ -146,30 +122,64 @@ def bot_initialize(user_msg):
             flag = False
             resp = "Mais vous ne m'avez posé aucune question"+ ", comment puis-je vous aider?" #random.choice(responses[2]['response'])
             return resp
+        
+        
+        
+import logging
+from typing import NoReturn
+from time import sleep
 
+import telegram
+from telegram.error import NetworkError, Unauthorized
 
-tbot = telegram_bot()
-update_id = None
 def make_reply(msg):     # user input will go here
     if msg is not None:
         reply = bot_initialize(msg)     # user input will start processing to bot_initialize function
         return reply
-       
-while True:
-    print("...")
-    updates = tbot.get_updates(offset=update_id)
-    updates = updates['result']
-    #print(updates)
-    if updates:
-        for item in updates:
-            update_id = item["update_id"]
-            print(update_id)
-            try:
-                message = item["message"]["text"]
-                #print(message)
-            except:
-                message = None
-            from_ = item["message"]["from"]["id"]
-            #print(from_)
-            reply = make_reply(message)
-            tbot.send_message(reply,from_)
+
+UPDATE_ID = None
+
+
+def main() -> NoReturn:
+    """Run the bot."""
+    global UPDATE_ID
+    # Telegram Bot Authorization Token
+    bot = telegram.Bot('1836903308:AAHtERNcpC-aJjb6J86k2AUzzUu_rxlT53k')
+
+    # get the first pending update_id, this is so we can skip over it in case
+    # we get an "Unauthorized" exception.
+    try:
+        UPDATE_ID = bot.get_updates()[0].update_id
+    except IndexError:
+        UPDATE_ID = None
+
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+
+    while True:
+        try:
+            echo(bot)
+        except NetworkError:
+            sleep(1)
+        except Unauthorized:
+            # The user has removed or blocked the bot.
+            UPDATE_ID += 1
+
+
+def echo(bot: telegram.Bot) -> None:
+    """Echo the message the user sent."""
+    global UPDATE_ID
+    # Request updates after the last update_id
+    for update in bot.get_updates(offset=UPDATE_ID, timeout=10):
+        UPDATE_ID = update.update_id + 1
+        try:
+            message = item["message"]["text"]
+            #print(message)
+        except:
+            message = None
+        from_ = item["message"]["from"]["id"]
+        #print(from_)
+        reply = make_reply(message)
+        bot.send_message(reply,from_)
+
+if __name__ == '__main__':
+    main()
