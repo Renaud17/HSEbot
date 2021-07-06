@@ -171,15 +171,12 @@ def echo(bot: telegram.Bot) -> None:
     # Request updates after the last update_id
     for update in bot.get_updates(offset=UPDATE_ID, timeout=10):
         UPDATE_ID = update.update_id + 1
-        try:
-            message = item["message"]["text"]
-            #print(message)
-        except:
-            message = None
-        from_ = item["message"]["from"]["id"]
-        #print(from_)
-        reply = make_reply(message)
-        bot.send_message(reply,from_)
+
+        # your bot can receive updates without messages
+        # and not all messages contain text
+        if update.message and update.message.text:
+            # Reply to the message
+            update.message.reply_text(update.message.text)
 
 if __name__ == '__main__':
     main()
