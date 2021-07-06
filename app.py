@@ -154,7 +154,11 @@ def bot_initialize(user_msg):
 
 tbot = telegram_bot()
 
-update_id = None
+try:
+    update_id = bot.get_updates()[0].update_id
+except IndexError:
+    update_id = None
+
 
 def make_reply(msg):
     if msg is not None:
