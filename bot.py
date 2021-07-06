@@ -187,7 +187,7 @@ def echo(bot: telegram.Bot) -> None:
                 from_ = item["message"]["from"]["id"]
                 #print(from_)
                 reply = make_reply(message)
-                tbot.send_message(reply,from_)
+                bot.send_message(reply,from_)
 
 
 if __name__ == '__main__':
