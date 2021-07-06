@@ -74,7 +74,11 @@ def intent(user_response):
     intent_predicted = responses[predicted_intent[0]]['intent']
     return intent_predicted
 
-
+import logging
+from typing import NoReturn
+from time import sleep
+import telegram
+from telegram.error import NetworkError, Unauthorized
 import json
 token = "1836903308:AAHtERNcpC-aJjb6J86k2AUzzUu_rxlT53k"
 
@@ -148,7 +152,8 @@ def bot_initialize(user_msg):
             return resp
 
 
-tbot = telegram_bot()
+#tbot = telegram_bot()
+tbot=telegram.Bot('1836903308:AAHtERNcpC-aJjb6J86k2AUzzUu_rxlT53k')
 update_id = None
 def make_reply(msg):     # user input will go here
     if msg is not None:
