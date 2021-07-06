@@ -1,4 +1,5 @@
- joblib
+python-telegram-bot --upgrade
+joblib
 nltk
 psycopg2
 sqlalchemy 
