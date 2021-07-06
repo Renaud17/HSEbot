@@ -99,7 +99,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Sol glissant",98],["sol glissant",98],["sol glisse",98],
 ["produits d'entretien( détergent, décapant, dégraissants)",99],["produits d'entretien",99],
 ["Des cables qui trainent au sol",100],["cables qui trainent au sol",100],["cable  traine  sol",100],["cable nu",100],["cable exposé",100],["cable,câble",100],["cables,câbles",100],["exposition de cable",100],
-["Déplacement sur des escaliers",101],["déplacement escalier",101],["déplacements escaliers",101],
+["Déplacement sur des escaliers",101],["déplacement escalier",101],["déplacements escaliers",101],["escaliers",101],["d'escaliers",101],["escalier",101],["d'escalier",101],
 ["produits dangéreux (bitume, les colles et vernis)",102],["Trouble respiratoire",102],["troubles respiratoires",102],["Troubles respiratoires",102],["trouble respiratoire",102],["fibres laines d'isolation",102],["fibre laine d'isolation",102],["Poussières d'amiante et de silice",102],["amiante silice",102],["poussières de ciment",102],["poussières de ciment",102],
 ["Irritation des yeux",102],["irritation yeux",102],["irritation oeil",102],["Irritation cutanée",102],["Nocives par inhalation",102],["nocives inhalation",102],["Lésions pulmonaires",102],["lésion poumon",102],["affections occulaires",102],["affection occulaire",102],
 ["Utilisation du matériel électrique (Carrellette, mixeur)",103],["Carrellette, mixeur",103],
