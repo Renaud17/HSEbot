@@ -159,7 +159,15 @@ def make_reply(msg):     # user input will go here
     if msg is not None:
         reply = bot_initialize(msg)     # user input will start processing to bot_initialize function
         return reply
-       
+  
+# get the first pending update_id, this is so we can skip over it in case
+    # we get an "Unauthorized" exception.
+    try:
+        update_id = tbot.get_updates()[0].update_id
+    except IndexError:
+        update_id = None
+
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 while True:
     print("...")
     # Request updates after the last update_id
