@@ -155,7 +155,7 @@ def bot_initialize(user_msg):
 tbot = telegram_bot()
 
 try:
-    update_id = bot.get_updates()[0].update_id
+    update_id = tbot.get_updates()[0].update_id
 except IndexError:
     update_id = None
 
