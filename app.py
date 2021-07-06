@@ -162,8 +162,11 @@ def make_reply(msg):     # user input will go here
        
 while True:
     print("...")
-    updates = tbot.get_updates(offset=update_id)
-    updates = updates['result']
+    # Request updates after the last update_id
+    for update in tbot.get_updates(offset=update_id, timeout=10):
+        update_id = update.update_id + 1
+    #updates = tbot.get_updates(offset=update_id)
+    updates = update['result']
     #print(updates)
     if updates:
         for item in updates:
