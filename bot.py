@@ -75,8 +75,7 @@ def intent(user_response):
     return intent_predicted
 
 
-user_res = None
-message = 1
+
 
 def bot_initialize(user_msg):
     flag=True
@@ -129,21 +128,18 @@ def bot_initialize(user_msg):
 
           
 
-def make_reply(msg):
-    if msg is not None:
-        reply = bot_initialize(msg)
-        return reply
+user_res = None
+message = 1
     
 def start_getting(update, context):
     global user_res
     user_res = message
-    reply=make_reply(message)
+    reply=bot_initialize(message)
     update.message.reply_text(reply)
   
 # function to handle normal text
 def text(update, context):
     global user_res
-
     if user_res == message:
         return start_getting(update, context)
 
