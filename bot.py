@@ -75,6 +75,8 @@ def intent(user_response):
     return intent_predicted
 
 
+user_res = None
+message = 1
 
 def bot_initialize(user_msg):
     flag=True
@@ -137,15 +139,13 @@ def start_getting(update, context):
     user_res = message
     reply=make_reply(message)
     update.message.reply_text(reply)
-    
+  
 # function to handle normal text
-#def text(update, context):
-    #global user_res
-    #if user_res == message:
-    #return start_getting(update, context) 
-    
-    
-    
+def text(update, context):
+    global user_res
+
+    if user_res == message:
+        return start_getting(update, context)
 
 def main():
     TOKEN = "1836903308:AAHtERNcpC-aJjb6J86k2AUzzUu_rxlT53k"
@@ -158,8 +158,7 @@ def main():
     # add handlers for start and help commands
     dispatcher.add_handler(CommandHandler("start_getting", start_getting))
     # add an handler for normal text (not commands)
-    dispatcher.add_handler(MessageHandler(Filters.start_getting, start_getting))
-
+    dispatcher.add_handler(MessageHandler(Filters.text, text))
     # start your shiny new bot
     updater.start_polling()
 
