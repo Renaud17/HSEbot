@@ -140,9 +140,9 @@ def start_getting(update, context):
     
 # function to handle normal text
 def text(update, context):
-    global user_res
-    if user_res == message:
-        return start_getting(update, context) 
+    #global user_res
+    #if user_res == message:
+    return start_getting(update, context) 
     
     
     
