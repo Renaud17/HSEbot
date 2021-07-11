@@ -74,11 +74,6 @@ def intent(user_response):
     intent_predicted = responses[predicted_intent[0]]['intent']
     return intent_predicted
 
-from telegram.ext import Updater, CommandHandler
-import requests
-TOKEN = "1836903308:AAHtERNcpC-aJjb6J86k2AUzzUu_rxlT53k"
-updater = Updater(token=TOKEN, use_context=True)
-dispatcher = updater.dispatcher
 
 
 def bot_initialize(user_msg):
@@ -131,10 +126,5 @@ def bot_initialize(user_msg):
             return resp
 
           
-          
-          
-                
-botinitialize = CommandHandler('bot_initialize', bot_initialize)
-dispatcher.add_handler(botinitialize)
-updater.start_polling()
+
 
