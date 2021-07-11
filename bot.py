@@ -130,6 +130,13 @@ def bot_initialize(user_msg):
 
 user_res = None
 message = 1
+
+# function to handle the /start command
+def start(update, context):
+    first_name = update.message.chat.first_name
+    update.message.reply_text(f"Hi {first_name}, nice to meet you!")
+    start_getting(update, context)
+    
     
 def start_getting(update, context):
     global user_res
@@ -152,7 +159,7 @@ def main():
     dispatcher = updater.dispatcher
 
     # add handlers for start and help commands
-    dispatcher.add_handler(CommandHandler("start_getting", start_getting))
+    dispatcher.add_handler(CommandHandler("start", start))
     # add an handler for normal text (not commands)
     dispatcher.add_handler(MessageHandler(Filters.text, text))
     # start your shiny new bot
