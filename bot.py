@@ -139,10 +139,10 @@ def start_getting(update, context):
     update.message.reply_text(reply)
     
 # function to handle normal text
-def text(update, context):
+#def text(update, context):
     #global user_res
     #if user_res == message:
-    return start_getting(update, context) 
+    #return start_getting(update, context) 
     
     
     
@@ -158,7 +158,7 @@ def main():
     # add handlers for start and help commands
     dispatcher.add_handler(CommandHandler("start_getting", start_getting))
     # add an handler for normal text (not commands)
-    dispatcher.add_handler(MessageHandler(Filters.text, text))
+    dispatcher.add_handler(MessageHandler(Filters.start_getting, start_getting))
 
     # start your shiny new bot
     updater.start_polling()
