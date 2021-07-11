@@ -24,7 +24,7 @@ from sklearn.ensemble import VotingClassifier
 from sklearn.model_selection import GridSearchCV
 from responses import *
 from data import *
-
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 # Lemmitization
 
 lemmer = nltk.stem.WordNetLemmatizer()
@@ -127,4 +127,48 @@ def bot_initialize(user_msg):
 
           
 
+def make_reply(msg):
+    if msg is not None:
+        reply = bot_initialize(msg)
+        return reply
+    
+def start_getting(update, context):
+    global user_res
+    user_res = message
+    reply=make_reply(message)
+    update.message.reply_text(reply)
+    
+# function to handle normal text
+def text(update, context):
+    global user_res
+    if user_res == message:
+        return start_getting(update, context) 
+    
+    
+    
 
+def main():
+    TOKEN = "1836903308:AAHtERNcpC-aJjb6J86k2AUzzUu_rxlT53k"
+
+    # create the updater, that will automatically create also a dispatcher and a queue to
+    # make them dialoge
+    updater = Updater(TOKEN, use_context=True)
+    dispatcher = updater.dispatcher
+
+    # add handlers for start and help commands
+    dispatcher.add_handler(CommandHandler("start_getting", start_getting))
+    # add an handler for normal text (not commands)
+    dispatcher.add_handler(MessageHandler(Filters.text, text))
+
+    # add an handler for errors
+    dispatcher.add_error_handler(error)
+
+    # start your shiny new bot
+    updater.start_polling()
+
+    # run the bot until Ctrl-C
+    updater.idle()
+
+
+if __name__ == '__main__':
+    main()
