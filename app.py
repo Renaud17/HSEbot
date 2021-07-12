@@ -147,7 +147,7 @@ def bot_initialize(user_msg):
             elif (user_intent == 'URL'):
                 user_response=user_response.lower()
                 resp = response(user_response)
-                return Voici un support pour tes tool box meeting:\n +resp
+                return "Voici un support pour tes tool box meeting:\n"+resp
 
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
