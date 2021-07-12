@@ -88,7 +88,7 @@ class telegram_bot():
         self.url = f"https://api.telegram.org/bot{self.token}"
 
     def get_updates(self,offset=None):
-        url = self.url+"/getUpdates?timeout=99999999999999999999999999999999999999999999"
+        url = self.url+"/getUpdates?timeout=999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
         if offset:
             url = url+f"&offset={offset+1}"
         url_info = requests.get(url)
@@ -141,6 +141,10 @@ def bot_initialize(user_msg):
                 user_response=user_response.lower()
                 resp =  response(user_response)
                 return resp #+ "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
+            
+            elif (user_response == '/TBM'):
+                resp = """Voici un support pour tes tool box meeting:\nhttps://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"""
+                return resp
 
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
