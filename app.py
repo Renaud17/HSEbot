@@ -91,8 +91,8 @@ class telegram_bot():
         url = self.url+"/getUpdates?timeout=100"
         if offset:
             url = url+f"&offset={offset+1}"
-            url_info = requests.get(url)
-            return json.loads(url_info.content)
+        url_info = requests.get(url)
+        return json.loads(url_info.content)
         
     def send_message(self,msg,chat_id):
         url = self.url + f"/sendMessage?chat_id={chat_id}&text={msg}"
