@@ -113,6 +113,10 @@ def bot_initialize(user_msg):
                 resp = """Salut je  suis HSEbot une intelligence artificielle qui t'aide à identifier les dangers et les risques ainsi qu'à les prévenirs.Mon créateur est Dahou Renaud L:https://www.linkedin.com/in/dahou-renaud-louis-8958599a/\n\nComment puis-je t'aider ?\n\nTapez Bye pour quitter."""
                 return resp
             
+            if (user_response == '/TBM'):
+                resp = """Voici un support pour tes tool box meeting:\nhttps://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"""
+                return resp
+            
             elif (user_intent == 'salutation'):
                 resp = str(random.choice(responses[0]['response'])) + ", comment puis-je vous aider?"
                 return resp
@@ -141,10 +145,6 @@ def bot_initialize(user_msg):
                 user_response=user_response.lower()
                 resp =  response(user_response)
                 return resp #+ "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
-            
-            if (user_response == '/TBM'):
-                resp = """Voici un support pour tes tool box meeting:\nhttps://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"""
-                return resp
 
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
