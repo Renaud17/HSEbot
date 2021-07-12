@@ -184,4 +184,7 @@ while True:
                     tbot.send_message(reply[x:x+4096],from_)
             else:
                 tbot.send_message(reply,from_)
+                
+            #reply = make_reply(message)
+            #tbot.send_message(reply,from_)
             
