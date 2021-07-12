@@ -142,7 +142,7 @@ def bot_initialize(user_msg):
                 resp =  response(user_response)
                 return resp #+ "\n\n🎁CADEAU SURPRISE.🎁\nJe t'offre ce document HSE qui te servira un jour.😊:\n"+random.choice(book)
             
-            elif (user_response == '/TBM'):
+            if (user_response == '/TBM'):
                 resp = """Voici un support pour tes tool box meeting:\nhttps://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"""
                 return resp
 
