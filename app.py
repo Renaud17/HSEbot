@@ -88,7 +88,7 @@ class telegram_bot():
         self.url = f"https://api.telegram.org/bot{self.token}"
 
     def get_updates(self,offset=None):
-        url = self.url+"/getUpdates?timeout=999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+        url = self.url+"/getUpdates?timeout=100"
         if offset:
             url = url+f"&offset={offset+1}"
         url_info = requests.get(url)
