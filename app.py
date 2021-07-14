@@ -187,11 +187,7 @@ while True:
             from_ = item["message"]["from"]["id"]
             #print(from_)
             reply = make_reply(message)
-            if len(reply) > 4096:
-                for x in range(0, len(reply), 4096):
-                    tbot.send_message(reply[x:x+4096],from_)
-            else:
-                tbot.send_message(reply,from_)
+            tbot.send_message(reply,from_)
                 
             #reply = make_reply(message)
             #tbot.send_message(reply,from_)
