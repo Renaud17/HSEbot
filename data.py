@@ -64,7 +64,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["espace de travail encombré ",63],["d'espace de travail encombré ",63],
 ["particules de métal et du matériel ",64],
 ["coffrage",65],
-["EPI travail électrique",66],
+["EPI travail électrique",66],["EPI travaux électriques",66],["EPI Travail électrique",66],["EPI travaux Electriques",66],
 ["chocs électriques, Electrisation, Electrocution",67],["électriques, Electrisation, Electrocution",67],
 [" EPI coffrage",68],
 ["travail en hauteur",69],["chute de personne",69],["chutes de personne",69],["Chutes de personne",69],
