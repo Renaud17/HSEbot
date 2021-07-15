@@ -48,7 +48,7 @@ def load_doc(jsonFile):
 
 
 #data = load_doc('data.json')
-book = load_doc('book.json')
+#book = load_doc('book.json')
 eclf= joblib.load('eclf.pkl')
 df = pd.DataFrame(data, columns = ["Text","Intent"])
 x = df['Text']
