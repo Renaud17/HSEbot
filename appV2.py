@@ -56,11 +56,7 @@ y= df['Intent']
 X= vectorizer.fit_transform(x)
 eclf.fit(X, y)
 
-def filter_text(text):
-    text = text.lower()
-    text = [c for c in text if c in 'ytzukengshchhzfyvaproljayachsmitbye- ']
-    text = ''.join(text)
-    return text.strip()
+
 # To get responnse
 
 def response(user_response):
@@ -72,7 +68,7 @@ def response(user_response):
 
 # To get indent
 def intent(user_response):
-    text_intent = filter_text([user_response])
+    text_intent = [user_response]
     X_test_intent = vectorizer.transform(text_intent)
     predicted_intent = eclf.predict(X_test_intent)
     intent_predicted = responses[predicted_intent[0]]['intent']
