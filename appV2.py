@@ -74,14 +74,10 @@ def intent(user_response):
     intent_predicted = responses[predicted_intent[0]]['intent']
     return intent_predicted
 
-import logging
-from typing import NoReturn
-from time import sleep
-import telegram
-from telegram.error import NetworkError, Unauthorized
-import json
+from telegram import Update, ForceReply
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-
+first_name = update.message.chat.first_name
 def bot_initialize(user_msg):
     flag=True
     while(flag==True):
@@ -90,7 +86,7 @@ def bot_initialize(user_msg):
         
         if (user_intent !=''):
             if (user_response == '/start'):
-                resp = """Salut je  suis HSEbot une intelligence artificielle qui t'aide à identifier les dangers et les risques ainsi qu'à les prévenirs.Mon créateur est Dahou Renaud L:https://www.linkedin.com/in/dahou-renaud-louis-8958599a/\n\nComment puis-je t'aider ?\n\nTapez Bye pour quitter."""
+                resp = """Salut{first_name}jesuis HSEbot une intelligence artificielle qui t'aide à identifier les dangers et les risques ainsi qu'à les prévenirs.Mon créateur est Dahou Renaud L:https://www.linkedin.com/in/dahou-renaud-louis-8958599a/\n\nComment puis-je t'aider ?\n\nTapez Bye pour quitter."""
                 return resp
             
             elif (user_intent == 'salutation'):
@@ -134,8 +130,7 @@ def bot_initialize(user_msg):
         
 
 
-from telegram import Update, ForceReply
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+
 
 
 def help_command(update: Update, _: CallbackContext) -> None:
