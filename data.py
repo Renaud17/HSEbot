@@ -157,4 +157,5 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Chimiques",154],["chimiques",154],["Chimique",154],["chimique",154],
 ["Néttoyage à pression",155],["néttoyage à pression",155],["Jet très haute pression",155],["jet très haute pression",155],
 ["HSE hse Hse",156],["HSE",156],["hse",156],["Hse",156],
-["/TBM",157],["/tbm",157],["/Tbm",157],["TBM",157],["tbm",157],["Tbm",157]]
+["/TBM",157],["/tbm",157],["/Tbm",157],["TBM",157],["tbm",157],["Tbm",157],
+["Manutention mécanique",158],["manutentions mécaniques",158],["manutention mécanique",158]]
