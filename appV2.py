@@ -76,6 +76,13 @@ def intent(user_response):
 
 
 
+from telegram import Update, ForceReply
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+
+
+def nameuser(update: Update, _: CallbackContext) -> None:
+    first_name = update.message.chat.first_name
+
 def bot_initialize(user_msg):
     flag=True
     while(flag==True):
@@ -128,12 +135,7 @@ def bot_initialize(user_msg):
         
 
 
-from telegram import Update, ForceReply
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-
-def nameuser(update: Update, _: CallbackContext) -> None:
-    first_name = update.message.chat.first_name
 
 
 def help_command(update: Update, _: CallbackContext) -> None:
