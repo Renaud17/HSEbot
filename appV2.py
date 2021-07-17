@@ -12,6 +12,7 @@ nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('punkt')
 from nltk.corpus import stopwords
+from nltk import edit_distance
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
