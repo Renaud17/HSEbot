@@ -72,9 +72,7 @@ from sklearn.preprocessing import binarize
 def intent(user_response):
     text_intent = [user_response]
     X_test_intent = vectorizer.transform(text_intent)
-    #predicted_intent = eclf.predict(X_test_intent)
-    predicted_prob = eclf.predict_proba(X_test_intent)
-    predicted_intent= binarize([predicted_prob], 0.3)[0]
+    predicted_intent = eclf.predict(X_test_intent)
     intent_predicted = responses[predicted_intent[0]]['intent']
     return intent_predicted
 
