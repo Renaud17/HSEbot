@@ -162,4 +162,4 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Opérations levage",159],["opérations levage",159],["Opération levages",159],
 ["Travaux  hauteur - Echafaudage",160],["travaux  hauteur - echafaudage",160],["travaux  Hauteur - echafaudage",160],
 ["accident grave ",161],["Accident grave",161],
-["chariot élévateur",162],["chariot élévateur",162]]
+["chariot élévateur",162],["Chariot élévateur",162],["chariots élévateurs",162],["Chariots élévateurs",162]]
