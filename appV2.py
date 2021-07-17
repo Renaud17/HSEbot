@@ -77,7 +77,7 @@ def intent(user_response):
     return intent_predicted
 
 
-
+    
 from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
