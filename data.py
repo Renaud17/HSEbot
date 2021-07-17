@@ -56,7 +56,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["postures contraignantes",55],
 ["chutes de plain-pied",56],
 ["projection du béton",57],
-["douleurs aux articulations liés à l'utilisation du vibreur",58],[" douleurs aux articulations",58],
+["douleurs articulations vibreur",58],["douleur articulation",58],["douleur articulaire",58],["douleurs articulaires",58],["douleurs articulations",58],
 ["troubles auditives",59],
 ["feraillage",60],
 ["Cisailler les barres et Plier les barres.",61],
