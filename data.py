@@ -8,7 +8,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Travail  sur écran ",7],["travail  sur écran ",7],
 ["Service de gardiennage ",8],["service de gardiennage ",8],
 ["Magasin ",9],["magasin ",9],
-["Entretien des locaux ",10],["entretien des locaux ",10],
+["Entretien  locaux ",10],["entretien  locaux ",10],
 ["désinsectisation",11],["dératisation",11],
 [" vidanges des fosses",12],[" vidange de fosse",12],
 ["déchets",13],["évacuation des déchets",13],
