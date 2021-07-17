@@ -71,9 +71,11 @@ def response(user_response):
 def intent(user_response):
     text_intent = [user_response]
     X_test_intent = vectorizer.transform(text_intent)
-    predicted_intent = eclf.predict(X_test_intent)
-    intent_predicted = responses[predicted_intent[0]]['intent']
-    return intent_predicted
+    #predicted_intent = eclf.predict(X_test_intent)
+    predicted_prob = eclf.predict_proba(X_test_intent)
+    if predicted_prob <= 0.5:
+        intent_predicted = responses[predicted_prob[0]]['intent']
+        return intent_predicted
 
 
 
