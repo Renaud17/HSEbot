@@ -160,6 +160,6 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["/TBM",157],["/tbm",157],["/Tbm",157],["TBM",157],["tbm",157],["Tbm",157],
 ["Manutention mécanique",158],["manutentions mécaniques",158],["manutention mécanique",158],
 ["Opérations levage",159],["opérations levage",159],["Opération levages",159],
-["Travaux  hauteur - Echafaudage",160],["travaux  hauteur - echafaudage",160],["travaux  Hauteur - echafaudage",160],["echafaudage",160],["Echafaudage",160],["echaffaudage",160],["Echaffaudage",160],["échaffaudages",160],["Echaffaudages",160],
+["Travaux  hauteur - Echafaudage",160],["travaux  hauteur - echafaudage",160],["travaux  Hauteur - echafaudage",160],["travaux echafaudage",160],[" travaux Echafaudage",160],[" travail echaffaudage",160],["travail Echaffaudage",160],["travail échaffaudages",160],[" travaux Echaffaudages",160],
 ["accident grave ",161],["Accident grave",161],
 ["chariot élévateur",162],["Chariot élévateur",162],["chariots élévateurs",162],["Chariots élévateurs",162]]
