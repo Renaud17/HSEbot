@@ -150,7 +150,7 @@ def main() -> None:
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
-    dispatcher.add_handler(CommandHandler('bop',bop))
+    
    
 
     # Start the Bot
