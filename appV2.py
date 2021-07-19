@@ -136,7 +136,7 @@ def bot_initialize(user_msg):
         
         
         
-        
+"""        
 def images(user_msg):
     flag=True
     while(flag==True):
@@ -159,7 +159,7 @@ def images_send(update: Update, _: CallbackContext) -> None:
     for f in files:
         update.message.reply_photo(chat_id, open(f , 'rb'))
     
-
+"""
 
 
 def help_command(update: Update, _: CallbackContext) -> None:
@@ -179,7 +179,7 @@ def main() -> None:
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
-    dispatcher.add_handler(MessageHandler(Filters.images,images_send))
+   
 
     # Start the Bot
     updater.start_polling()
