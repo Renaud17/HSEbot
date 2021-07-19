@@ -151,17 +151,23 @@ def images(user_msg):
         
 import requests
 import json
+path = resp_img
 
+files = []
+# r=root, d=directories, f = files
+for r, d, f in os.walk(path):
+    for file in f:
+        if '.jpg' in file:
+            files.append(os.path.join(r, file))
+for f in files:
+        open(f, 'rb')
+        
+        
 bot_token = '1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs'
-file = rresp_img
-
-files = {
-    'photo': open(file, 'rb')
-}
 
 message = ('https://api.telegram.org/bot'+ bot_token + '/sendPhoto?chat_id=' 
            + chat_id)
-send = requests.post(message, files = files)        
+send = requests.post(message, f)        
         
         
 def help_command(update: Update, _: CallbackContext) -> None:
