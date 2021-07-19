@@ -169,4 +169,4 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Panneaux lutte contre l’incendie",166],["panneaux lutte contre incendie",166],["panneau lutte contre incendie",166],
 ["Panneaux  sauvetage  secours",167],["panneau  sauvetage  secour",167],
 ["Panneaux d’avertissements",167],["panneaux d’avertissement",167],["Panneau avertissements",167],["panneau avertissement",167],
-["Panneaux  sauvetage secours",168],["panneau  sauvetage secour",168]]
+["Panneaux  obligations",168],["panneau  obligation",168]]
