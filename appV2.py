@@ -77,7 +77,7 @@ def intent(user_response):
     return intent_predicted
 
 
-    
+import telegram    
 from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
@@ -132,7 +132,33 @@ def bot_initialize(user_msg):
 
         
 
+        
+        
+        
+        
+        
+def images(user_msg):
+    flag=True
+    while(flag==True):
+        user_response = user_msg
+        user_intent = intent(user_response)
+    if (user_intent == "affiche"):
+        user_response=user_response.lower()
+        resp_img =  response(user_response)
+        return resp_img
 
+    
+    
+def images_send(bot, update: Update) -> None:
+    files = []
+    # r=root, d=directories, f = files
+    for r, d, f in os.walk(resp_img):
+        for file in f:
+            if '.jpg' in file:
+                files.append(os.resp_img.join(r, file))
+    for f in files:
+    bot.send_photo(chat_id, open(f , 'rb'))
+    
 
 
 
@@ -150,10 +176,10 @@ def run_bot(update: Update, _: CallbackContext) -> None:
 def main() -> None:
     """Start the bot."""
     updater = Updater("1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs")
-
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
+    dispatcher.add_handler(MessageHandler(images_send))
 
     # Start the Bot
     updater.start_polling()
