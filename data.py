@@ -163,6 +163,6 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Travaux  hauteur - Echafaudage",160],["travaux  hauteur - echafaudage",160],["travaux  Hauteur - echafaudage",160],["travaux echafaudage",160],[" travaux Echafaudage",160],[" travail echaffaudage",160],["travail Echaffaudage",160],["travail d'échaffaudages",160],[" travaux Echaffaudages",160],["travaux d'échafaudage",160],
 ["accident grave ",161],["Accident grave",161],["accidents graves ",161],["Accidents graves",161],
 ["chariot élévateur",162],["Chariot élévateur",162],["chariots élévateurs",162],["Chariots élévateurs",162],
-["en cas d'incendie",163],["en cas incendies",163],
-["en cas urgence",164],["en cas urgences",164],
-["en cas évacuation",165],["en cas évacuations",165]]
+["en cas d'incendie",163],["en cas d'incendies",163],["cas incendie",163],["cas incendies",163],
+["en cas d'urgence",164],["en cas d'urgences",164],["cas urgence",164],["cas urgences",164],
+["en cas d'évacuation",165],["en cas d'évacuations",165],["cas évacuation",165],["cas évacuations",165]]
