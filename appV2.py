@@ -179,7 +179,7 @@ def main() -> None:
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
-    dispatcher.add_handler(MessageHandler(Filters.photo,images_send))
+    dispatcher.add_handler(MessageHandler(Filters.images,images_send))
 
     # Start the Bot
     updater.start_polling()
