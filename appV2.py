@@ -130,44 +130,7 @@ def bot_initialize(user_msg):
             resp = "Mais vous ne m'avez posé aucune question"+ ", comment puis-je vous aider?" #random.choice(responses[2]['response'])
             return resp
 
-        
-
-        
-        
-        
-        
-     
-def images(user_msg):
-    flag=True
-    while(flag==True):
-        user_response = user_msg
-        user_intent = intent(user_response)
-    if (user_intent == "affiche"):
-        user_response=user_response.lower()
-        resp_img =  response(user_response)
-        return resp_img
-
-
-        
-import requests
-import json
-path = resp_img
-
-files = []
-# r=root, d=directories, f = files
-for r, d, f in os.walk(path):
-    for file in f:
-        if '.jpg' in file:
-            files.append(os.path.join(r, file))
-for f in files:
-        open(f, 'rb')
-        
-        
-bot_token = '1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs'
-
-message = ('https://api.telegram.org/bot'+ bot_token + '/sendPhoto?chat_id=' 
-           + chat_id)
-send = requests.post(message, f)        
+             
         
         
 def help_command(update: Update, _: CallbackContext) -> None:
