@@ -145,8 +145,25 @@ def images(user_msg):
     if (user_intent == "affiche"):
         user_response=user_response.lower()
         resp_img =  response(user_response)
+        return resp_img
 
 
+        
+import requests
+import json
+
+bot_token = '1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs'
+file = rresp_img
+
+files = {
+    'photo': open(file, 'rb')
+}
+
+message = ('https://api.telegram.org/bot'+ bot_token + '/sendPhoto?chat_id=' 
+           + chat_id)
+send = requests.post(message, files = files)        
+        
+        
 def help_command(update: Update, _: CallbackContext) -> None:
     """Send a message when the command /help is issued."""
     update.message.reply_text('Help!')
