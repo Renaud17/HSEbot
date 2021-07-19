@@ -149,7 +149,7 @@ def images(user_msg):
 
     
     
-def images_send(bot, update: Update) -> None:
+def images_send(update: Update, _: CallbackContext) -> None:
     files = []
     # r=root, d=directories, f = files
     for r, d, f in os.walk(resp_img):
@@ -157,7 +157,7 @@ def images_send(bot, update: Update) -> None:
             if '.jpg' in file:
                 files.append(os.resp_img.join(r, file))
     for f in files:
-        bot.send_photo(chat_id, open(f , 'rb'))
+        update.message.reply_photo(chat_id, open(f , 'rb'))
     
 
 
