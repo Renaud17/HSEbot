@@ -164,4 +164,4 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["accident grave ",161],["Accident grave",161],["accidents graves ",161],["Accidents graves",161],
 ["chariot élévateur",162],["Chariot élévateur",162],["chariots élévateurs",162],["Chariots élévateurs",162],
 ["en cas d'incendie",163],["en cas incendies",163],
-["en cas urgence",164],["en cas urgence",164]]
+["en cas urgence",164],["en cas urgences",164]]
