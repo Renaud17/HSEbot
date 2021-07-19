@@ -136,7 +136,7 @@ def bot_initialize(user_msg):
         
         
         
-"""        
+     
 def images(user_msg):
     flag=True
     while(flag==True):
@@ -145,21 +145,6 @@ def images(user_msg):
     if (user_intent == "affiche"):
         user_response=user_response.lower()
         resp_img =  response(user_response)
-        return resp_img
-
-    
-    
-def images_send(update: Update, _: CallbackContext) -> None:
-    files = []
-    # r=root, d=directories, f = files
-    for r, d, f in os.walk(resp_img):
-        for file in f:
-            if '.jpg' in file:
-                files.append(os.resp_img.join(r, file))
-    for f in files:
-        update.message.reply_photo(chat_id, open(f , 'rb'))
-    
-"""
 
 
 def help_command(update: Update, _: CallbackContext) -> None:
