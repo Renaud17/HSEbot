@@ -157,7 +157,7 @@ def images_send(bot, update: Update) -> None:
             if '.jpg' in file:
                 files.append(os.resp_img.join(r, file))
     for f in files:
-    bot.send_photo(chat_id, open(f , 'rb'))
+        bot.send_photo(chat_id, open(f , 'rb'))
     
 
 
