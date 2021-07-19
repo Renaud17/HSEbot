@@ -7,7 +7,7 @@ import warnings
 import requests
 import pickle
 import random
-
+import os
 nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('punkt')
@@ -131,7 +131,42 @@ def bot_initialize(user_msg):
             return resp
 
              
-        
+def bot_image(user_msg):
+    flag=True
+    while(flag==True):
+        user_response = user_msg
+        user_intent = intent(user_response)   
+        if (user_intent == "affiche"):
+                user_response=user_response.lower()
+                resp_img =  response(user_response)
+                return resp_img
+            
+            
+files = []
+for file in f:
+    if '.jpg' in file:
+        files.append(os.resp_img.join(r, file))
+for f in files:
+    parameters = {"photo" : f}
+    def get_url():
+        contents = requests.get(parameters).json()    
+        url = contents['url']
+        return url
+                    
+def get_image_url():
+    allowed_extension = ['jpg','jpeg','png']
+    file_extension = ''
+    while file_extension not in allowed_extension:
+        url = get_url()
+        file_extension = re.search("([^.]*)$",url).group(1).lower()
+    return url
+                   
+
+def bop(bot, update):
+    url = get_url()
+    chat_id = update.message.chat_id
+    bot.send_photo(chat_id=chat_id, photo=url)
+            
         
 def help_command(update: Update, _: CallbackContext) -> None:
     """Send a message when the command /help is issued."""
@@ -150,6 +185,7 @@ def main() -> None:
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
+    dispatcher.add_handler(CommandHandler('bop',bop))
    
 
     # Start the Bot
