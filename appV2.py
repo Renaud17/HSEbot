@@ -140,30 +140,28 @@ def bot_image(user_msg):
                 user_response=user_response.lower()
                 resp_img =  response(user_response)
                 return resp_img
-            
-            
-files = []
-for file in f:
-    if '.jpg' in file:
-        files.append(os.resp_img.join(r, file))
-for f in files:
-    parameters = {"photo" : f}
-    def get_url():
-        contents = requests.get(parameters).json()    
-        url = contents['url']
-        return url
+                files = []
+                for file in f:
+                    if '.jpg' in file:
+                        files.append(os.resp_img.join(r, file))
+                for f in files:
+                    parameters = {"photo" : f}
+                    def get_url():
+                        contents = requests.get(parameters).json()    
+                        url = contents['url']
+                        return url
                     
 def get_image_url():
     allowed_extension = ['jpg','jpeg','png']
     file_extension = ''
     while file_extension not in allowed_extension:
-        url = get_url()
+        url = bot_image()
         file_extension = re.search("([^.]*)$",url).group(1).lower()
     return url
                    
 
 def bop(bot, update):
-    url = get_url()
+    url = bot_image()
     chat_id = update.message.chat_id
     bot.send_photo(chat_id=chat_id, photo=url)
             
