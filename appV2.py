@@ -129,7 +129,7 @@ def bot_initialize(user_msg):
                 resp =  response(user_response)
                 update_name = name_list[name_list['CAT']==resp]
                 for i in update_name['URL']:
-			return "https://i.imgur.com/" + i
+			print(str("https://i.imgur.com/" + i))
 			
                     
             
