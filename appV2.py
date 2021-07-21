@@ -140,7 +140,7 @@ def bot_img(user_msg):
             user_response=user_response.lower()
             file_path =  response(user_response)
             return file_path     
-        
+"""        
 def send_photo(chat_id, file_opened):
     method = "sendPhoto"
     params = {'chat_id': chat_id}
@@ -150,7 +150,7 @@ def send_photo(chat_id, file_opened):
     return resp
 
 send_photo(chat_id, open(file_path, 'rb'))
-            
+"""           
         
 def help_command(update: Update, _: CallbackContext) -> None:
     """Send a message when the command /help is issued."""
