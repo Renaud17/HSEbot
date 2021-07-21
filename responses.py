@@ -164,11 +164,11 @@ responses ={0 : {"intent":"salutation","response":["bonjour","Bonjour, je suis s
 163:{"intent":"question","response":["\n✔En priorité\n▪Prévenez immédiatement les urgences\n▪Coupez les énergies (gaz, électricité)\n▪Aidez à l’évacuation sans vous mettre vous-même en danger.Limitez l’incendie avec les moyens à disposition\n▪Facilitez l’arrivée et la tâche des secours\n✔Quelques conseils :\n\n▪Matériel de lutte contre l’incendie: différents types d’hydrants et d’extincteurs sont à votre disposition sur le site\n▪Attaquez les flammes à leur base\n▪Ménagez-vous toujours une sortie libre, ne vous laissez ni cerner ni bloquer par le feu et repliez-vous toujours à temps\n▪S’il y a beaucoup de fumée, rapprochez-vous du sol et couvrez-vous la bouche avec un linge humide pour vous protéger\n▪Sur des appareils électriques, n’utilisez pas d’eau\n▪Si le feu prend à vos vêtements, ne courez pas, roulez-vous sur le sol ou essayez d’étouffer le feu par tous les moyens enveloppants (couverture, tapis)"]},
 164:{"intent":"question","response":["\n✔Appelez  à partir des téléphones internes ou avec un téléphone portable le numéro d'urgence et Dites:\n1▪Votre  nom et votre n° de téléphone\n2▪La  nature de l’accident : chute, explosion, incendie, pollution\n3▪L’endroit de l’accident : point ambulance\n4▪Le  nombre de blessé(s) et le type de blessure ou de pollution : jambe cassée, brûlure, hydrocarbure versé sur le sol ou dans l’égout...\n5▪L’état des victimes : ne respire pas, saigne beaucoup, est évanoui...\n6▪L’état des victimes : ne respire pas, saigne beaucoup, est évanoui...\nEcoutez ce qu’on vous conseille de faire et ne raccrochez jamais en premier lieu.\nEnvoyez quelqu’un au point ambulance pour guider les secours\n"]},
 165:{"intent":"question","response":["\n✔Rendez-vous au point de rassemblement le plus proche.Rassemblez-vous, comptez-vous par équipe et signalez les manquants."]},
-166:{"intent":"Doc","response":["INCENDIE"]},
-167:{"intent":"Doc","response":["SECOURS"]},
+166:{"intent":"Doc","response":[""]},
+167:{"intent":"Doc","response":["INCENDIE"]},
 168:{"intent":"Doc","response":["AVERTISSEMENT_DANGER"]},
-169:{"intent":"Doc","response":["OBLIGATION"]}}
-    
-                                     
+169:{"intent":"Doc","response":["OBLIGATION"]},
+170:{"intent":"Doc","response":["INTERDICTION"]},
+171:{"intent":"Doc","response":["SECOURS"]}}                      
                                       
                                      
