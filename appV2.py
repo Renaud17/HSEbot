@@ -81,6 +81,8 @@ import telegram
 from telegram import Update, ForceReply, Bot,ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
+#import matching table
+name_list = pd.read_csv("url_links.csv")
 
 def bot_initialize(user_msg):
     flag=True
@@ -120,8 +122,16 @@ def bot_initialize(user_msg):
             elif (user_intent == "question"):
                 user_response=user_response.lower()
                 resp =  response(user_response)
-                return resp #+ "\n\n🎁CADEAU🎁\nJe t'offre ce document HSE qui te servira pour tes TBM et répondre à certaines questions dont ma réponse te semble incorrecte je suis une intelligence artificielle et je peux faire des erreurs comme l'humain.😊:\n https://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"    
-
+                return resp #+ "\n\n🎁CADEAU🎁\nJe t'offre ce document HSE qui te servira pour tes TBM et répondre à certaines questions dont ma réponse te semble incorrecte je suis une intelligence artificielle et je peux faire des erreurs comme l'humain.😊:\n https://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"
+	    elif (user_intent == "affiche"):	
+		user_response=user_response.lower()
+		resp =  response(user_response)
+		update_name = name_list[name_list['CAT']==resp]
+		for i in range(0,len(update_name)):
+			url = "https://i.imgur.com/" + update_name.iloc[i,0]
+		return url
+	
+	
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
                 return resp
@@ -138,25 +148,9 @@ reply_keyboard = [['AVERTISSEMENT_DANGER', 'SECOUR', 'OBLIGATION']
 				,['INTERDICTION','INCENDIE']]
 
 
-#import matching table
-name_list = pd.read_csv("url_links.csv")
 
-bot = telegram.Bot(token="1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs")
 
-#function to ask for user input
-def photo(update: Update, _: CallbackContext) -> None:
-    choice = update.message.reply_text(
-        "Choose a category of photos and you'll be sent the photos",
-        reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True, resize_keyboard=True)) #use replykeyboardmarkup and set one_time_keyboard to true to make it disappear after selection is made
-    return choice    
 
-# function to send photos
-def reply(update: Update, _: CallbackContext) -> None:
-    user_input = update.message.text # store user input
-    update_name = name_list[name_list['CAT']==user_input] # filter matching table by category
-    for i in range(0,len(update_name)): # loop to send the photos using the unique identifier + the imgur url header
-        url = "https://i.imgur.com/" + update_name.iloc[i,0]
-        bot.send_photo(chat_id=update.message.chat_id, photo=url) #send the photo
 	
 	
 	
@@ -178,9 +172,7 @@ def main() -> None:
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
-    dispatcher.add_handler(CommandHandler("photo",photo))
-    dispatcher.add_handler(MessageHandler(Filters.regex('^(AVERTISSEMENT_DANGER|SECOUR|OBLIGATION|INTERDICTION|INCENDIE)$'), reply)) #https://towardsdatascience.com/a-custom-telegram-bot-to-share-your-precious-photos-and-allow-users-to-filter-by-theme-6b056319a0ae
-   
+    
 
     # Start the Bot
     updater.start_polling()
