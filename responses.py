@@ -166,7 +166,7 @@ responses ={0 : {"intent":"salutation","response":["bonjour","Bonjour, je suis s
 165:{"intent":"question","response":["\n✔Rendez-vous au point de rassemblement le plus proche.Rassemblez-vous, comptez-vous par équipe et signalez les manquants."]},
 166:{"intent":"affiche","response":["./tree/main/photos/incendie"]},
 167:{"intent":"affiche","response":["./tree/main/photos/secours"]},
-168:{"intent":"affiche","response":["./tree/main/photos/avertissement/DANGER-atmosphere-explosive.jpg"]},
+168:{"intent":"affiche","response":["photos/avertissement/DANGER-atmosphere-explosive.jpg"]},
 169:{"intent":"affiche","response":["./tree/main/photos/obligation"]}}
     
                                      
