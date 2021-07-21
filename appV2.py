@@ -122,8 +122,15 @@ def bot_initialize(user_msg):
             elif (user_intent == "question"):
                 user_response=user_response.lower()
                 resp =  response(user_response)
-                return resp #+ "\n\n🎁CADEAU🎁\nJe t'offre ce document HSE qui te servira pour tes TBM et répondre à certaines questions dont ma réponse te semble incorrecte je suis une intelligence artificielle et je peux faire des erreurs comme l'humain.😊:\n https://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"	
-                    
+                return resp #+ "\n\n🎁CADEAU🎁\nJe t'offre ce document HSE qui te servira pour tes TBM et répondre à certaines questions dont ma réponse te semble incorrecte je suis une intelligence artificielle et je peux faire des erreurs comme l'humain.😊:\n https://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"
+            
+            elif (user_intent == "Doc"):
+                user_response=user_response.lower()
+                resp =  response(user_response)
+                update_name = name_list[name_list['CAT']==resp]
+                A=list(update_name['URL'])
+                listToStr = '\n'.join(map(str, A))
+                return listToStr
             
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
@@ -135,17 +142,6 @@ def bot_initialize(user_msg):
             return resp
          
 
-        
-# Create shape of reply keyboard
-reply_keyboard = [['AVERTISSEMENT_DANGER', 'SECOUR', 'OBLIGATION']
-				,['INTERDICTION','INCENDIE']]
-
-
-
-
-
-	
-	
 	
             
 def help_command(update: Update, _: CallbackContext) -> None:
