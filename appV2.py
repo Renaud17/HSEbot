@@ -131,6 +131,7 @@ def bot_initialize(user_msg):
                     for file in f:
                         if '.jpg' in file:
                             files.append(os.resp.join(r, file))
+                for f in files:
                 
 
             else:
@@ -169,8 +170,7 @@ def main() -> None:
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
-    for f in files:
-        Bot.send_photo(chat_id=update.message.chat.id, photo=open(f, 'rb'))
+    Bot.send_photo(chat_id=update.message.chat.id, photo=open(f, 'rb'))
    
 
     # Start the Bot
