@@ -143,7 +143,7 @@ def bot_initialize(user_msg):
                         'text': self.value,
                     }
                     method_name = 'sendMessage'
-                    if self.value == 'sample-pdf':
+                    if self.value == user_response:
                         return self._send_local_file(response(user_response))
                     return method_name, responseT
 
