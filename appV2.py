@@ -138,8 +138,8 @@ def bot_img(user_msg):
         user_intent = intent(user_response)
         if (user_response == 'affiche'):
             user_response=user_response.lower()
-                file_path =  response(user_response)
-                return file_path     
+            file_path =  response(user_response)
+            return file_path     
         
 def send_photo(chat_id, file_opened):
     method = "sendPhoto"
