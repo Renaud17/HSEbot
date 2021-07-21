@@ -141,6 +141,7 @@ reply_keyboard = [['AVERTISSEMENT_DANGER', 'SECOUR', 'OBLIGATION']
 #import matching table
 name_list = pd.read_csv("url_links.csv")
 
+bot = telegram.Bot(token="1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs")
 
 #function to ask for user input
 def photo(update: Update, _: CallbackContext) -> None:
