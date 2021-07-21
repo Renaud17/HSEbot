@@ -132,13 +132,10 @@ def bot_initialize(user_msg):
             return resp
          
 
-def bot_img(user_msg):
-    flag=True
-    while(flag==True):
-        user_response = user_msg
-        user_intent = intent(user_response)            
         
-            
+# Create shape of reply keyboard
+reply_keyboard = [['AVERTISSEMENT_DANGER', 'SECOUR', 'OBLIGATION']
+				,['INTERDICTION','INCENDIE']]
                                  
             
 def help_command(update: Update, _: CallbackContext) -> None:
