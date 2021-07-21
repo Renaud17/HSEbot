@@ -129,7 +129,8 @@ def bot_initialize(user_msg):
                 resp =  response(user_response)
                 update_name = name_list[name_list['CAT']==resp]
                 for i in update_name['URL']:
-                    return str(print("https://i.imgur.com/" + i))
+			resp=str(print("https://i.imgur.com/" + i))
+		return resp
             
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
