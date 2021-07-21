@@ -131,9 +131,6 @@ def bot_initialize(user_msg):
                     for file in f:
                         if '.jpg' in file:
                             files.append(os.resp.join(r, file))
-                for f in files:
-                    photo=open(f, 'rb')
-                return photo
                 
 
             else:
@@ -146,12 +143,19 @@ def bot_initialize(user_msg):
             return resp
          
 
+def bot_img(user_msg):
+    flag=True
+    while(flag==True):
+        user_response = user_msg
+        user_intent = intent(user_response)            
+        
             
-                   
+                                 
             
 def help_command(update: Update, _: CallbackContext) -> None:
     """Send a message when the command /help is issued."""
     update.message.reply_text('Help!')
+
 
 
 def run_bot(update: Update, _: CallbackContext) -> None:
@@ -159,14 +163,14 @@ def run_bot(update: Update, _: CallbackContext) -> None:
     answer = bot_initialize(replic)
     update.message.reply_text(answer)
 
-
 def main() -> None:
     """Start the bot."""
     updater = Updater("1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs")
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
-    
+    for f in files:
+        Bot.send_photo(chat_id=update.message.chat.id, photo=open(f, 'rb'))
    
 
     # Start the Bot
