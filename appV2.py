@@ -82,17 +82,19 @@ from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
 def _send_local_file(self, file_path):
-        f = open(file_path, 'rb')
-        file_bytes = f.read()
-        f.close()
-        response = {
-            'document': (f.name, file_bytes)
-        }
-        method_name = 'sendDocument'
-        return method_name, response
+    f = open(file_path, 'rb')
+    file_bytes = f.read()
+    f.close()
+    responseT = {
+        'document': (f.name, file_bytes)
+    }
+    method_name = 'sendDocument'
+    return method_name, responseT
     
 
-    
+ 
+
+     
 
 def bot_initialize(user_msg):
     flag=True
@@ -136,10 +138,14 @@ def bot_initialize(user_msg):
             
             elif (user_intent == "affiche"):
                 user_response=user_response.lower()
-                resp =  _send_local_file(response(user_response))
-                return resp
-                
-                
+                def _text_get_response(self):
+                    responseT = {
+                        'text': self.value,
+                    }
+                    method_name = 'sendMessage'
+                    if self.value == 'sample-pdf':
+                        return self._send_local_file(response(user_response))
+                    return method_name, responseT
 
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
