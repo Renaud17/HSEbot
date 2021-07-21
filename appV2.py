@@ -78,7 +78,7 @@ def intent(user_response):
 
 
 import telegram    
-from telegram import Update, ForceReply
+from telegram import Update, ForceReply, Bot
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
 
@@ -124,14 +124,16 @@ def bot_initialize(user_msg):
             
             elif (user_intent == "affiche"):
                 user_response=user_response.lower()
-                def _text_get_response(self):
-                    responseT = {
-                        'text': self.value,
-                    }
-                    method_name = 'sendMessage'
-                    if self.value == user_response:
-                        return self._send_local_file(response(user_response))
-                    return method_name, responseT
+                resp =  response(user_response)
+                files = []
+                # r=root, d=directories, f = files
+                for r, d, f in os.walk(resp):
+                    for file in f:
+                        if '.jpg' in file:
+                            files.append(os.resp.join(r, file))
+                for f in files:
+                        Bot.send_photo(chat_id=update.message.chat.id, photo=open(f, 'rb'))
+                
 
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
