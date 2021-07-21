@@ -169,5 +169,6 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["Pictogramme",166],["panneaux",166],["panneau",166],
 ["/incendie",167],
 ["/avertissements",168],
-["/obligations",168],
-["/interdictions",169]]
+["/obligations",169],
+["/interdictions",170],
+["/secours",171]]
