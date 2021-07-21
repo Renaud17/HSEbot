@@ -78,7 +78,7 @@ def intent(user_response):
 
 
 import telegram    
-from telegram import Update, ForceReply, Bot
+from telegram import Update, ForceReply, Bot,ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
 
