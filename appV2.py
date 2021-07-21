@@ -120,19 +120,7 @@ def bot_initialize(user_msg):
             elif (user_intent == "question"):
                 user_response=user_response.lower()
                 resp =  response(user_response)
-                return resp #+ "\n\n🎁CADEAU🎁\nJe t'offre ce document HSE qui te servira pour tes TBM et répondre à certaines questions dont ma réponse te semble incorrecte je suis une intelligence artificielle et je peux faire des erreurs comme l'humain.😊:\n https://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"
-            
-            elif (user_intent == "affiche"):
-                user_response=user_response.lower()
-                resp =  response(user_response)
-                files = []
-                # r=root, d=directories, f = files
-                for r, d, f in os.walk(resp):
-                    for file in f:
-                        if '.jpg' in file:
-                            files.append(os.resp.join(r, file))
-                for f in files:
-                
+                return resp #+ "\n\n🎁CADEAU🎁\nJe t'offre ce document HSE qui te servira pour tes TBM et répondre à certaines questions dont ma réponse te semble incorrecte je suis une intelligence artificielle et je peux faire des erreurs comme l'humain.😊:\n https://drive.google.com/file/d/10nDPjBZZX82XCQUZIlUCujc0PpYDlWhb/view?usp=sharing"    
 
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
@@ -170,7 +158,6 @@ def main() -> None:
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
-    Bot.send_photo(chat_id=update.message.chat.id, photo=open(f, 'rb'))
    
 
     # Start the Bot
