@@ -138,8 +138,18 @@ def bot_img(user_msg):
         user_intent = intent(user_response)
         if (user_response == 'affiche'):
             user_response=user_response.lower()
-            file_path =  response(user_response)
-            return file_path     
+            path =  response(user_response)
+            return path     
+
+bot = telegram.Bot('1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs') 
+files = []
+# r=root, d=directories, f = files
+for r, d, f in os.walk(path):
+    for file in f:
+        if '.jpg' in file:
+            files.append(os.path.join(r, file))
+for f in files:
+        bot.send_photo(chat_id=update.message.chat.id, photo=open(f, 'rb'))
 """        
 def send_photo(chat_id, file_opened):
     method = "sendPhoto"
