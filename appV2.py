@@ -143,19 +143,19 @@ name_list = pd.read_csv("url_links.csv")
 
 
 #function to ask for user input
-def photo(update: Update, _: CallbackContext):
+def photo(update: Update, _: CallbackContext) -> None:
     choice = update.message.reply_text(
         "Choose a category of photos and you'll be sent the photos",
         reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True, resize_keyboard=True)) #use replykeyboardmarkup and set one_time_keyboard to true to make it disappear after selection is made
     return choice    
 
 # function to send photos
-def reply(update: Update, _: CallbackContext):
+def reply(update: Update, _: CallbackContext) -> None:
     user_input = update.message.text # store user input
     update_name = name_list[name_list['CAT']==user_input] # filter matching table by category
     for i in range(0,len(update_name)): # loop to send the photos using the unique identifier + the imgur url header
         url = "https://i.imgur.com/" + update_name.iloc[i,0]
-        _.bot.send_photo(chat_id=update.message.chat_id, photo=url) #send the photo
+        bot.send_photo(chat_id=update.message.chat_id, photo=url) #send the photo
 	
 	
 	
