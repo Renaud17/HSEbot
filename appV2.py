@@ -144,7 +144,7 @@ def bot_img(user_msg):
 bot = telegram.Bot('1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs') 
 files = []
 # r=root, d=directories, f = files
-for r, d, f in os.walk(path=path):
+for r, d, f in os.walk(bot_img(user_msg)):
     for file in f:
         if '.jpg' in file:
             files.append(os.path.join(r, file))
