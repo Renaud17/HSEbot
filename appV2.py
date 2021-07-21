@@ -132,7 +132,7 @@ def bot_initialize(user_msg):
                         if '.jpg' in file:
                             files.append(os.resp.join(r, file))
                 for f in files:
-                        Bot.send_photo(chat_id=update.message.chat.id, photo=open(f, 'rb'))
+                    Bot.send_photo(chat_id=update.message.chat.id, photo=open(f, 'rb'))
                 
 
             else:
