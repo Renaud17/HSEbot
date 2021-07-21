@@ -128,7 +128,7 @@ def bot_initialize(user_msg):
                 user_response=user_response.lower()
                 resp =  response(user_response)
                 update_name = name_list[name_list['CAT']==resp]
-                for i in update_name:
+                for i in range(0,len(update_name)):
                     continue
                     url = "https://i.imgur.com/" + update_name.iloc[i,0]
                     return url
