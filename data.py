@@ -166,7 +166,7 @@ data = [["Salut",0],["Bonjour",0],["Bonsoire",0],["Hello",0],["coucou",0],["ça 
 ["en cas d'incendie",163],["en cas d'incendies",163],["cas incendie",163],["cas incendies",163],
 ["en cas d'urgence",164],["en cas d'urgences",164],["cas urgence",164],["cas urgences",164],
 ["en cas d'évacuation",165],["en cas d'évacuations",165],["cas évacuation",165],["cas évacuations",165],
-["Pictogramme",166],["panneaux",166],["panneau",166],
+["Pictogramme",166],["panneaux",166],["panneau",166],["pictogrammes",166],["Pictogrammes",166],["Panneaux",166],["Panneau",166],["Affiches",166],["affiches",166],["Affiche",166],["affiche",166],
 ["/incendie",167],
 ["/avertissements",168],
 ["/obligations",169],
