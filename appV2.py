@@ -81,20 +81,6 @@ import telegram
 from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-def _send_local_file(self, file_path):
-    f = open(file_path, 'rb')
-    file_bytes = f.read()
-    f.close()
-    responseT = {
-        'document': (f.name, file_bytes)
-    }
-    method_name = 'sendDocument'
-    return method_name, responseT
-    
-
- 
-
-     
 
 def bot_initialize(user_msg):
     flag=True
