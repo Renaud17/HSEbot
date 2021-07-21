@@ -129,38 +129,7 @@ def bot_initialize(user_msg):
             flag = False
             resp = "Mais vous ne m'avez posé aucune question"+ ", comment puis-je vous aider?" #random.choice(responses[2]['response'])
             return resp
-##################################################"""
-
-def bot_img(user_msg):
-    flag=True
-    while(flag==True):
-        user_response = user_msg
-        user_intent = intent(user_response)
-        if (user_response == 'affiche'):
-            user_response=user_response.lower()
-            path =  response(user_response)
-            return path     
-
-bot = telegram.Bot('1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs') 
-files = []
-# r=root, d=directories, f = files
-for r, d, f in os.walk(bot_img()):
-    for file in f:
-        if '.jpg' in file:
-            files.append(os.path.join(r, file))
-for f in files:
-        bot.send_photo(chat_id=update.message.chat.id, photo=open(f, 'rb'))
-"""        
-def send_photo(chat_id, file_opened):
-    method = "sendPhoto"
-    params = {'chat_id': chat_id}
-    files = {'photo': file_opened}
-    api_url="https://api.telegram.org/bot1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs/sendPhoto"
-    resp = requests.post(api_url + method, params, files=files)
-    return resp
-
-send_photo(chat_id, open(file_path, 'rb'))
-"""           
+         
         
 def help_command(update: Update, _: CallbackContext) -> None:
     """Send a message when the command /help is issued."""
