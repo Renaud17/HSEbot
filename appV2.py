@@ -133,7 +133,7 @@ def bot_initialize(user_msg):
                             files.append(os.resp.join(r, file))
                 for f in files:
                     photo=open(f, 'rb')
-                    return photo
+                return photo
                 
 
             else:
