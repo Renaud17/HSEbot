@@ -129,10 +129,10 @@ def bot_initialize(user_msg):
                 resp =  response(user_response)
                 update_name = name_list[name_list['CAT']==resp]
                 for i in update_name:
-			if i==resp:
-				continue
-            url = "https://i.imgur.com/" + update_name.iloc[i,0]
-            return url
+                    if i==resp:
+                        continue
+                    url = "https://i.imgur.com/" + update_name.iloc[i,0]
+                    return url
             
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
@@ -144,6 +144,16 @@ def bot_initialize(user_msg):
             return resp
          
 
+        
+# Create shape of reply keyboard
+reply_keyboard = [['AVERTISSEMENT_DANGER', 'SECOUR', 'OBLIGATION']
+				,['INTERDICTION','INCENDIE']]
+
+
+
+
+
+	
 	
 	
             
