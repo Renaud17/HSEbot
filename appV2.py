@@ -124,14 +124,15 @@ def bot_initialize(user_msg):
             elif (user_intent == "affiche"):
                 user_response=user_response.lower()
                 file_path =  response(user_response)
-                f = open(file_path, 'rb')
-                file_bytes = f.read()
-                f.close()
-                responseT = {
-                    'document': (f.name, file_bytes)
-                }
-                method_name = 'sendDocument'
-                return method_name, responseT
+                for file in file_path:
+                    f = open(file, 'rb')
+                    file_bytes = f.read()
+                    f.close()
+                    responseT = {
+                        'document': (f.name, file_bytes)
+                    }
+                    method_name = 'sendDocument'
+                    return method_name, responseT
 
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
