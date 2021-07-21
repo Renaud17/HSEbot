@@ -129,8 +129,8 @@ def bot_initialize(user_msg):
                 resp =  response(user_response)
                 update_name = name_list[name_list['CAT']==resp]
                 A=list(update_name['URL'])
-                listToStr = '\n'.join(map(str, A))
-                return listToStr
+                #listToStr = '\n'.join(map(str, A))
+                return i for i in A #listToStr
             
             else:
                 resp = "Désolé je ne comprend pas mon vocabulaire est en amélioration.Envoie ta question à mon créateur @Renaud17" #random.choice(responses[4]['response'])
