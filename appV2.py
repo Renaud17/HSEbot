@@ -136,7 +136,34 @@ def bot_initialize(user_msg):
 # Create shape of reply keyboard
 reply_keyboard = [['AVERTISSEMENT_DANGER', 'SECOUR', 'OBLIGATION']
 				,['INTERDICTION','INCENDIE']]
-                                 
+
+
+#import matching table
+name_list = pd.read_csv("url_links.csv")
+
+
+#standard start function
+def start(bot, context):
+    context.bot.send_chat_action(chat_id=bot.message.chat_id, action=telegram.ChatAction.TYPING)
+    bot.message.reply_text("This bot sends you photos of our beloved family pet! Send /photo to start.")
+
+#function to ask for user input
+def photo(update, context):
+    choice = update.message.reply_text(
+        "Choose a category of photos and you'll be sent the photos",
+        reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True, resize_keyboard=True)) #use replykeyboardmarkup and set one_time_keyboard to true to make it disappear after selection is made
+    return choice    
+
+# function to send photos
+def reply(update, context):
+    user_input = update.message.text # store user input
+    update_name = name_list[name_list['CAT']==user_input] # filter matching table by category
+    for i in range(0,len(update_name)): # loop to send the photos using the unique identifier + the imgur url header
+        url = "https://i.imgur.com/" + update_name.iloc[i,0]
+        context.bot.send_photo(chat_id=update.message.chat_id, photo=url) #send the photo
+	
+	
+	
             
 def help_command(update: Update, _: CallbackContext) -> None:
     """Send a message when the command /help is issued."""
@@ -155,6 +182,8 @@ def main() -> None:
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(MessageHandler(Filters.text, run_bot))
+    dispatcher.add_handler(CommandHandler("photo",photo))
+    dispatcher.add_handler(MessageHandler(Filters.regex('^(AVERTISSEMENT_DANGER|SECOUR|OBLIGATION|INTERDICTION|INCENDIE)$'), reply)) #https://towardsdatascience.com/a-custom-telegram-bot-to-share-your-precious-photos-and-allow-users-to-filter-by-theme-6b056319a0ae
    
 
     # Start the Bot
