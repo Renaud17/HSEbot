@@ -155,10 +155,6 @@ def run_bot(update: Update, _: CallbackContext) -> None:
     answer = bot_initialize(replic)
     update.message.reply_text(answer)
 
-import os
-
-TOKEN = "1836903308:AAG-WhFRVDrYHqXluZRtpO7jGtnMiLLNnUs"
-PORT = int(os.environ.get('PORT', '8443')
 
 def main() -> None:
     """Start the bot."""
@@ -169,12 +165,8 @@ def main() -> None:
     
 
     # Start the Bot
-    #updater.start_polling()
-    # add handlers
-    updater.start_webhook(listen="0.0.0.0",
-			      port=PORT,
-			      url_path=TOKEN,
-			      webhook_url=" https://new-appiren.herokuapp.com/" + TOKEN)
+    updater.start_polling()
+    
     updater.idle()
 
 if __name__ == '__main__':
